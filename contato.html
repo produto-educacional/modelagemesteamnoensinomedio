@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contato</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/shortcuts.css">
+   <link rel="stylesheet" href="css/acessibilidade.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <script src="js/script.js" defer></script>
+</head>
+
+<body id="topo">
+
+   <header class="header">
+      <button class="menu-btn" id="menuToggle" aria-label="Abrir menu">
+         <i class="fas fa-bars"></i>
+      </button>
+   </header>
+
+   <div class="acessibilidade">
+      <button id="botao-acessibilidade" aria-expanded="false">Acessibilidade</button>
+      <div id="opcoes-acessibilidade" class="escondido">
+         <button id="aumentar-fonte">A+</button>
+         <button id="diminuir-fonte">A-</button>
+         <button id="alterna-contraste">◐</button>
+      </div>
+   </div>
+
+   <nav class="sidebar" id="sidebar">
+      <ul>
+         <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+         <li><a href="sobre.html"><i class="fas fa-book"></i> Sobre o PE</a></li>
+         <li><a href="teoria.html"><i class="fas fa-lightbulb"></i> Teoria</a></li>
+         <li><a href="atividades.html"><i class="fas fa-cogs"></i> Atividades</a></li>
+         <li><a href="sugestões.html"><i class="fas fa-chalkboard-teacher"></i> Sugestões pedagógicas</a></li>
+         <li><a href="contato.html" class="active"><i class="fas fa-envelope"></i> Contato</a></li>
+      </ul>
+   </nav>
+
+   <main class="content">
+      <section class="main-area">
+
+         <article class="posts">
+
+            <div class="titulo-pagina">
+               <h1>Contato</h1>
+               <p>
+                  Caso deseje compartilhar experiências, tirar dúvidas ou dialogar sobre o uso das atividades,
+                  entre em contato.
+               </p>
+            </div>
+
+            <section class="secao-conteudo">
+               <div class="secao-topo">
+                  <div class="secao-icone"><i class="fas fa-envelope-open-text"></i></div>
+                  <h2 class="secao-titulo">Informações para contato</h2>
+               </div>
+               <div class="secao-corpo">
+                  <div class="card-contato">
+                     <p><strong>Ariely Aparecida Caruzo</strong></p>
+                     <p>Programa de Pós-Graduação em Ensino de Matemática – UTFPR</p>
+                     <p>Câmpus Cornélio Procópio e Londrina</p>
+                     <p><strong>E-mail:</strong> seuemail@exemplo.com</p>
+                  </div>
+
+                  <div class="caixa-info">
+                     <p>
+                        Você também pode utilizar este espaço para compartilhar adaptações realizadas em sala de aula,
+                        sugestões de uso das atividades e comentários sobre a experiência de navegação no site.
+                     </p>
+                  </div>
+               </div>
+            </section>
+
+            <div class="nav-paginas">
+               <a href="sugestões.html">← Página anterior: Sugestões pedagógicas</a>
+               <a href="index.html">Voltar ao início →</a>
+            </div>
+
+         </article>
+
+         <aside class="shortcuts">
+
+            <div class="shortcut-box">
+               <div class="shortcut-title">Fale comigo</div>
+               <p class="shortcut-texto">
+                  Este espaço pode ser utilizado para dúvidas, sugestões e relatos de experiências com as atividades do site.
+               </p>
+            </div>
+
+         </aside>
+      </section>
+   </main>
+
+   <button id="btn-topo" onclick="voltarTopo()">↑</button>
+
+   <footer class="footer">
+      <div class="rodape-container">
+         <div class="rodape-info">
+            <img src="img/imagem-logo.png" alt="Logos do PPGMAT e UTFPR" class="logo-img">
+            <p>
+               Produto educacional desenvolvido no âmbito do <strong>Programa de Pós-Graduação em Ensino de Matemática (PPGMAT)</strong>
+               da <strong>Universidade Tecnológica Federal do Paraná (UTFPR)</strong>, câmpus Cornélio Procópio e Londrina.
+            </p>
+            <p class="copyright">Desenvolvido por Ariely Caruzo | © 2026 – Todos os direitos reservados.</p>
+         </div>
+      </div>
+      <img src="img/imagem-rodape.png" alt="Elementos gráficos educacionais" class="footer-img">
+   </footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sugestões pedagógicas</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/shortcuts.css">
+   <link rel="stylesheet" href="css/acessibilidade.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <script src="js/script.js" defer></script>
+</head>
+
+<body id="topo">
+
+   <header class="header">
+      <button class="menu-btn" id="menuToggle" aria-label="Abrir menu">
+         <i class="fas fa-bars"></i>
+      </button>
+   </header>
+
+   <div class="acessibilidade">
+      <button id="botao-acessibilidade" aria-expanded="false">Acessibilidade</button>
+      <div id="opcoes-acessibilidade" class="escondido">
+         <button id="aumentar-fonte">A+</button>
+         <button id="diminuir-fonte">A-</button>
+         <button id="alterna-contraste">◐</button>
+      </div>
+   </div>
+
+   <nav class="sidebar" id="sidebar">
+      <ul>
+         <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+         <li><a href="sobre.html"><i class="fas fa-book"></i> Sobre o PE</a></li>
+         <li><a href="teoria.html"><i class="fas fa-lightbulb"></i> Teoria</a></li>
+         <li><a href="atividades.html"><i class="fas fa-cogs"></i> Atividades</a></li>
+         <li><a href="sugestões.html" class="active"><i class="fas fa-chalkboard-teacher"></i> Sugestões pedagógicas</a></li>
+         <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+      </ul>
+   </nav>
+
+   <main class="content">
+      <section class="main-area">
+
+         <article class="posts">
+
+            <div class="titulo-pagina">
+               <h1>Sugestões pedagógicas</h1>
+               <p>
+                  Esta seção reúne orientações que podem auxiliar no planejamento, desenvolvimento
+                  e adaptação das atividades propostas neste site.
+               </p>
+            </div>
+
+            <section class="secao-conteudo">
+               <div class="secao-topo">
+                  <div class="secao-icone"><i class="fas fa-people-group"></i></div>
+                  <h2 class="secao-titulo">Organização da atividade</h2>
+               </div>
+               <div class="secao-corpo">
+                  <p>
+                     Sempre que possível, recomenda-se que as atividades sejam desenvolvidas em grupos,
+                     favorecendo a discussão de ideias, a construção coletiva de soluções e a socialização
+                     de diferentes estratégias.
+                  </p>
+               </div>
+            </section>
+
+            <section class="secao-conteudo">
+               <div class="secao-topo">
+                  <div class="secao-icone"><i class="fas fa-person-chalkboard"></i></div>
+                  <h2 class="secao-titulo">Papel do professor</h2>
+               </div>
+               <div class="secao-corpo">
+                  <p>
+                     O professor atua como mediador do processo, incentivando os estudantes a levantar hipóteses,
+                     justificar escolhas, construir registros e revisar suas ideias ao longo da investigação.
+                  </p>
+               </div>
+            </section>
+
+            <section class="secao-conteudo">
+               <div class="secao-topo">
+                  <div class="secao-icone"><i class="fas fa-draw-polygon"></i></div>
+                  <h2 class="secao-titulo">Uso de representações</h2>
+               </div>
+               <div class="secao-corpo">
+                  <p>
+                     Esquemas, desenhos, tabelas, diagramas, plantas e registros escritos podem auxiliar
+                     os estudantes na organização do raciocínio e na comunicação das soluções elaboradas.
+                  </p>
+               </div>
+            </section>
+
+            <section class="secao-conteudo">
+               <div class="secao-topo">
+                  <div class="secao-icone"><i class="fas fa-sliders"></i></div>
+                  <h2 class="secao-titulo">Possíveis adaptações</h2>
+               </div>
+               <div class="secao-corpo">
+                  <ul class="lista-destaque">
+                     <li>adequar a complexidade da atividade ao ano escolar;</li>
+                     <li>modificar o contexto mantendo o problema investigativo central;</li>
+                     <li>incorporar recursos tecnológicos disponíveis na escola;</li>
+                     <li>ampliar ou reduzir o tempo de desenvolvimento conforme a realidade da turma.</li>
+                  </ul>
+               </div>
+            </section>
+
+            <div class="nav-paginas">
+               <a href="atividades.html">← Página anterior: Atividades</a>
+               <a href="contato.html">Próxima página: Contato →</a>
+            </div>
+
+         </article>
+
+         <aside class="shortcuts">
+
+            <div class="shortcut-box">
+               <div class="shortcut-title">Nesta seção</div>
+               <p class="shortcut-texto">
+                  Aqui você encontra orientações gerais para conduzir as atividades e adaptá-las a diferentes contextos.
+               </p>
+            </div>
+
+            <div class="shortcut-box">
+               <div class="shortcut-title">Acesso rápido</div>
+               <a href="contato.html" class="atalho-link">Ir para contato</a>
+            </div>
+
+         </aside>
+      </section>
+   </main>
+
+   <button id="btn-topo" onclick="voltarTopo()">↑</button>
+
+   <footer class="footer">
+      <div class="rodape-container">
+         <div class="rodape-info">
+            <img src="img/imagem-logo.png" alt="Logos do PPGMAT e UTFPR" class="logo-img">
+            <p>
+               Produto educacional desenvolvido no âmbito do <strong>Programa de Pós-Graduação em Ensino de Matemática (PPGMAT)</strong>
+               da <strong>Universidade Tecnológica Federal do Paraná (UTFPR)</strong>, câmpus Cornélio Procópio e Londrina.
+            </p>
+            <p class="copyright">Desenvolvido por Ariely Caruzo | © 2026 – Todos os direitos reservados.</p>
+         </div>
+      </div>
+      <img src="img/imagem-rodape.png" alt="Elementos gráficos educacionais" class="footer-img">
+   </footer>
+
+</body>
+</html>

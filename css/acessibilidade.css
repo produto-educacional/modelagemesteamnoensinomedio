@@ -1,0 +1,131 @@
+/* =========================
+   BOTÃO DE ACESSIBILIDADE
+========================= */
+
+.acessibilidade {
+    position: fixed;
+    right: 0;
+    bottom: 90px; /* deixa espaço para o botão de topo */
+    z-index: 9999;
+}
+
+/* botão fechado */
+#botao-acessibilidade {
+    background-color: #6faeb8;
+    color: #ffffff;
+    border: none;
+    padding: 16px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: -3px 4px 12px rgba(0,0,0,0.18);
+
+    writing-mode: vertical-lr; /* texto vertical lendo para a direita */
+    transform: none;
+
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* hover sem girar */
+#botao-acessibilidade:hover {
+    background-color: #4f8d97;
+}
+
+/* botão aberto */
+#botao-acessibilidade.aberto {
+    writing-mode: horizontal-tb;
+    transform: none;
+    border-radius: 16px 0 0 0;
+    width: 120px;
+    text-align: center;
+}
+
+/* caixa aberta maior e alinhada */
+#opcoes-acessibilidade {
+    margin-top: 0;
+    background: #ffffff;
+    border: 1px solid #d8d8d0;
+    border-radius: 0 0 0 18px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 120px;
+    box-shadow: -3px 4px 12px rgba(0,0,0,0.14);
+}
+
+#opcoes-acessibilidade button {
+    background: #f1f1eb;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 10px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#opcoes-acessibilidade button:hover {
+    background: #e8f3f5;
+}
+
+.escondido {
+    display: none !important;
+}
+
+/* =========================
+   ALTO CONTRASTE
+========================= */
+
+body.alto-contraste {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+body.alto-contraste .header,
+body.alto-contraste .sidebar,
+body.alto-contraste .posts,
+body.alto-contraste .shortcut-box,
+body.alto-contraste .footer,
+body.alto-contraste .bloco-destaque,
+body.alto-contraste .atividade-info,
+body.alto-contraste .downloads-atividade,
+body.alto-contraste .bloco-texto,
+body.alto-contraste .galeria-atividade {
+    background: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+body.alto-contraste a {
+    color: #ffff00 !important;
+}
+
+body.alto-contraste .shortcut-title,
+body.alto-contraste .btn-atividade,
+body.alto-contraste .btn-download,
+body.alto-contraste #botao-acessibilidade,
+body.alto-contraste #opcoes-acessibilidade button {
+    background: #ffff00 !important;
+    color: #000 !important;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+    .acessibilidade {
+        right: 14px;
+        bottom: 75px;
+    }
+
+    #botao-acessibilidade {
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+}
