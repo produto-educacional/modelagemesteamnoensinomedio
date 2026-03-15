@@ -4,23 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atividade - Construindo um telhado</title>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/atividade.css">
+  <link rel="stylesheet" href="css/acessibilidade.css">
+  <link rel="icon" type="image/png" sizes="160x160" href="img/favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="js/script.js" defer></script>
 </head>
-<body>
+<body id="topo">
 
   <header class="header">
-    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    <button class="menu-btn" id="menuToggle" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
   </header>
+
+  <div class="acessibilidade">
+    <button id="botao-acessibilidade" aria-expanded="false">
+      Acessibilidade
+    </button>
+
+    <div id="opcoes-acessibilidade" class="escondido">
+      <button id="aumentar-fonte">A+</button>
+      <button id="diminuir-fonte">A-</button>
+      <button id="alterna-contraste">◐</button>
+    </div>
+  </div>
 
   <nav class="sidebar" id="sidebar">
     <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre o Produto Educacional</a></li>
-      <li><a href="teoria.html">Um pouco de teoria</a></li>
-      <li><a href="atividades.html" class="active">Atividades</a></li>
-      <li><a href="sugestões.html">Sugestões pedagógicas</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+      <li><a href="sobre.html"><i class="fas fa-book"></i> Sobre o Produto Educacional</a></li>
+      <li><a href="teoria.html"><i class="fas fa-lightbulb"></i> Um pouco de teoria</a></li>
+      <li><a href="atividades.html" class="active"><i class="fas fa-cogs"></i> Atividades</a></li>
+      <li><a href="sugestões.html"><i class="fas fa-chalkboard-teacher"></i> Sugestões pedagógicas</a></li>
+      <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
     </ul>
   </nav>
 
@@ -55,12 +76,22 @@
         <div class="atividade-info">
           <h2>Informações da atividade</h2>
           <div class="info-grid">
-            <div><strong>Público indicado:</strong> 3º ano do Ensino Médio</div>
-            <div><strong>Contexto:</strong> Itinerários Formativos</div>
-            <div><strong>Trilha envolvida:</strong> Resolução de Problemas</div>
-            <div><strong>Duração:</strong> 8 aulas de 50 minutos</div>
-            <div><strong>Áreas envolvidas:</strong> Matemática, Engenharia e Sustentabilidade</div>
-            <div><strong>Possíveis conteúdos:</strong> geometria, área, proporção, inclinação, Teorema de Pitágoras, regra de três e análise de custos</div>
+            <div>
+              <strong>Público indicado:</strong><br>
+              3º ano do Ensino Médio
+            </div>
+            <div>
+              <strong>Áreas STEAM mobilizadas:</strong><br>
+              Ciência, Tecnologia, Engenharia, Arte e Matemática
+            </div>
+            <div>
+              <strong>Possíveis conteúdos matemáticos:</strong><br>
+              geometria, área, proporção, inclinação, Teorema de Pitágoras, regra de três e análise de custos
+            </div>
+            <div>
+              <strong>Recursos necessários:</strong><br>
+              internet para pesquisa, calculadora, materiais de registro, papel milimetrado ou softwares de representação
+            </div>
           </div>
         </div>
 
@@ -128,6 +159,25 @@
     </div>
   </main>
 
-  <script src="script.js"></script>
+  <button id="btn-topo" onclick="voltarTopo()">↑</button>
+
+  <footer class="footer">
+    <div class="rodape-container">
+      <div class="rodape-info">
+        <img src="img/imagem-logo.png" alt="Logos do PPGMAT e UTFPR" class="logo-img">
+        <p>
+          Produto educacional desenvolvido no âmbito do
+          <strong>Programa de Pós-Graduação em Ensino de Matemática (PPGMAT)</strong>
+          da <strong>Universidade Tecnológica Federal do Paraná (UTFPR)</strong>,
+          câmpus Cornélio Procópio e Londrina.
+        </p>
+        <p class="copyright">
+          Desenvolvido por Ariely Caruzo | © 2026 – Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+    <img src="img/imagem-rodape.png" alt="Elementos gráficos educacionais" class="footer-img">
+  </footer>
+
 </body>
 </html>
