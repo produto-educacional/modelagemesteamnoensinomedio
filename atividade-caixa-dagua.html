@@ -4,23 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atividade - Caixa d’Água</title>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/atividade.css">
+  <link rel="stylesheet" href="css/acessibilidade.css">
+  <link rel="icon" type="image/png" sizes="160x160" href="img/favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="js/script.js" defer></script>
 </head>
-<body>
+<body id="topo">
 
   <header class="header">
-    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    <button class="menu-btn" id="menuToggle" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
   </header>
+
+  <div class="acessibilidade">
+    <button id="botao-acessibilidade" aria-expanded="false">
+      Acessibilidade
+    </button>
+
+    <div id="opcoes-acessibilidade" class="escondido">
+      <button id="aumentar-fonte">A+</button>
+      <button id="diminuir-fonte">A-</button>
+      <button id="alterna-contraste">◐</button>
+    </div>
+  </div>
 
   <nav class="sidebar" id="sidebar">
     <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre o Produto Educacional</a></li>
-      <li><a href="teoria.html">Um pouco de teoria</a></li>
-      <li><a href="atividades.html" class="active">Atividades</a></li>
-      <li><a href="sugestões.html">Sugestões pedagógicas</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+      <li><a href="sobre.html"><i class="fas fa-book"></i> Sobre o Produto Educacional</a></li>
+      <li><a href="teoria.html"><i class="fas fa-lightbulb"></i> Um pouco de teoria</a></li>
+      <li><a href="atividades.html" class="active"><i class="fas fa-cogs"></i> Atividades</a></li>
+      <li><a href="sugestões.html"><i class="fas fa-chalkboard-teacher"></i> Sugestões pedagógicas</a></li>
+      <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
     </ul>
   </nav>
 
@@ -52,11 +73,22 @@
         <div class="atividade-info">
           <h2>Informações da atividade</h2>
           <div class="info-grid">
-            <div><strong>Público indicado:</strong> Ensino Médio</div>
-            <div><strong>Contexto:</strong> Itinerários Formativos</div>
-            <div><strong>Áreas envolvidas:</strong> Matemática, Ciência, Tecnologia, Engenharia e Arte</div>
-            <div><strong>Organização:</strong> Trabalho em grupos</div>
-            <div><strong>Recursos:</strong> caixa d’água, materiais para plantio, instrumentos de medida, registros e recursos tecnológicos</div>
+            <div>
+              <strong>Público indicado:</strong><br>
+              Ensino Médio
+            </div>
+            <div>
+              <strong>Áreas STEAM mobilizadas:</strong><br>
+              Ciência, Tecnologia, Engenharia, Arte e Matemática
+            </div>
+            <div>
+              <strong>Possíveis conteúdos matemáticos:</strong><br>
+              área, perímetro, divisão de espaço, estimativas, organização espacial e interpretação de medidas
+            </div>
+            <div>
+              <strong>Recursos necessários:</strong><br>
+              caixa d’água, materiais para plantio, instrumentos de medida, registros escritos e recursos digitais
+            </div>
           </div>
         </div>
 
@@ -75,11 +107,11 @@
         <div class="bloco-texto">
           <h2>Como a atividade foi desenvolvida</h2>
           <p>
-            A atividade foi desenvolvida em contexto real de sala de aula e organizada em etapas. Inicialmente,
-            os estudantes foram convidados a refletir sobre a possibilidade de reutilização da caixa d’água.
-            Em seguida, investigaram dimensões, possibilidades de divisão do espaço, tipos de plantio e
-            condições necessárias para cultivo e manutenção. Posteriormente, a proposta envolveu discussões
-            sobre irrigação e aprimoramento das ideias elaboradas pelos grupos. :contentReference[oaicite:1]{index=1}
+            A atividade foi desenvolvida em contexto real de sala de aula e organizada em etapas.
+            Inicialmente, os estudantes foram convidados a refletir sobre a possibilidade de reutilização
+            da caixa d’água. Em seguida, investigaram dimensões, possibilidades de divisão do espaço,
+            tipos de plantio e condições necessárias para cultivo e manutenção. Posteriormente, a proposta
+            envolveu discussões sobre irrigação e aprimoramento das ideias elaboradas pelos grupos.
           </p>
         </div>
 
@@ -115,21 +147,25 @@
     </div>
   </main>
 
-<!--Botão topo-->
-   <a href="#topo" class="btn-topo">
-      <i class="fas fa-arrow-up"></i>
-   </a>
+  <button id="btn-topo" onclick="voltarTopo()">↑</button>
 
-   <!--Rodapé-->
-   <footer class="footer">
-      <div class="rodape-div-conteudo">
-         <p>Produto Educacional desenvolvido no âmbito do Programa de Pós-graduaçãi em Ensino de Matemática da Universidade Tecnológica Federal do Paraná (UTFPR)- Câmpus Cornélio Procópio e Londrina</p>
-         <p class=”copyright”>&copy; Copyright | Todos os direitos reservados – 2026.</p>
+  <footer class="footer">
+    <div class="rodape-container">
+      <div class="rodape-info">
+        <img src="img/imagem-logo.png" alt="Logos do PPGMAT e UTFPR" class="logo-img">
+        <p>
+          Produto educacional desenvolvido no âmbito do
+          <strong>Programa de Pós-Graduação em Ensino de Matemática (PPGMAT)</strong>
+          da <strong>Universidade Tecnológica Federal do Paraná (UTFPR)</strong>,
+          câmpus Cornélio Procópio e Londrina.
+        </p>
+        <p class="copyright">
+          Desenvolvido por Ariely Caruzo | © 2026 – Todos os direitos reservados.
+        </p>
       </div>
+    </div>
+    <img src="img/imagem-rodape.png" alt="Elementos gráficos educacionais" class="footer-img">
+  </footer>
 
-      <img src="img/imagem-rodape.png" alt="imagem para o rodapé" class="footer-img">
-   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
