@@ -235,6 +235,7 @@ p {
 .imagem-teoria {
     text-align: center;
     margin: 30px 0;
+   justify-content: center
 }
 
 .imagem-teoria img {
