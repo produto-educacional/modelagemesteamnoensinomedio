@@ -240,12 +240,14 @@ p {
 .imagem-teoria img {
     max-width: 700px;
     width: 100%;
+   position: center;
 }
 
 .legenda {
     font-size: 0.9rem;
     color: #555;
     margin-top: 8px;
+   text-aling:center;
 }
 
 /* =========================
