@@ -35,11 +35,11 @@
 /* TEXTO */
 
 .shortcut-texto {
-    font-size: 1rem;
-    color: #666666;
-    line-height: 1.5;
-    margin-bottom: 16px;
-    text-align: justify;
+   font-size: 1rem;
+   color: #555;
+   line-height: 1.5;
+   margin-bottom: 16px;
+   text-align: justify;
 }
 
 /* LINK DA MINIATURA */
