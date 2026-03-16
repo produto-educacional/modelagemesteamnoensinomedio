@@ -232,6 +232,22 @@ p {
     margin-top: 25px;
 }
 
+.imagem-teoria {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.imagem-teoria img {
+    max-width: 700px;
+    width: 100%;
+}
+
+.legenda {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 8px;
+}
+
 /* =========================
    PÁGINA GERAL DE ATIVIDADES
 ========================= */
