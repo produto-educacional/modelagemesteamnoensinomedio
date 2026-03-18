@@ -957,8 +957,6 @@ p {
     padding-top: 24px;
 }
 
-/* texto */
-
 .compartilhar-home .secao-corpo {
     text-align: center;
 }
@@ -969,8 +967,6 @@ p {
     margin-right: auto;
     color: var(--texto-suave);
 }
-
-/* BOTÕES */
 
 .botoes-compartilhar {
     display: flex;
@@ -985,18 +981,14 @@ p {
     align-items: center;
     justify-content: center;
     gap: 10px;
-
     padding: 12px 20px;
     border-radius: 999px;
-
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
-
     transition: all 0.25s ease;
     cursor: pointer;
     border: none;
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
@@ -1004,8 +996,6 @@ p {
     transform: translateY(-2px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
-
-/* ÍCONES */
 
 .icone-social {
     display: inline-flex;
@@ -1019,8 +1009,6 @@ p {
     object-fit: contain;
     display: block;
 }
-
-/* CORES DOS BOTÕES */
 
 .btn-compartilhar.whatsapp {
     background: #25D366;
@@ -1043,8 +1031,6 @@ p {
     color: #ffffff;
 }
 
-/* MENSAGEM */
-
 .mensagem-copiado {
     text-align: center;
     margin-top: 14px;
@@ -1053,16 +1039,12 @@ p {
     min-height: 20px;
 }
 
-/* QR CODE */
-
 .area-qrcode {
     margin-top: 30px;
     padding: 24px;
-
     background: linear-gradient(135deg, #fcfcfa, #f7fbfc);
     border: 1px solid var(--borda);
     border-radius: 18px;
-
     text-align: center;
     box-shadow: var(--sombra);
 }
@@ -1080,8 +1062,6 @@ p {
     text-align: center;
 }
 
-/* caixa do QR */
-
 .qrcode-box {
     display: flex;
     justify-content: center;
@@ -1092,20 +1072,13 @@ p {
     width: 180px;
     height: 180px;
     padding: 12px;
-
     background: #ffffff;
     border: 1px solid var(--borda);
     border-radius: 16px;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* =========================
-   RESPONSIVO
-========================= */
-
 @media (max-width: 768px) {
-
     .botoes-compartilhar {
         flex-direction: column;
         align-items: stretch;
