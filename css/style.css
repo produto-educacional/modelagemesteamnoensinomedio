@@ -714,6 +714,146 @@ p {
 }
 
 /* =========================
+   PÁGINA CONTATO
+========================= */
+
+.main-area.contato-page {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contato-page .posts {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.texto-introdutorio-contato {
+    text-align: justify;
+}
+
+.contato-autoras {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.autora-card {
+    flex: 1 1 420px;
+    max-width: 460px;
+    background: var(--fundo-secundario);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: var(--sombra);
+}
+
+.autora-topo {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.foto-autora {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--azul);
+    flex-shrink: 0;
+}
+
+.autora-info {
+    flex: 1;
+    min-width: 220px;
+}
+
+.autora-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--azul-escuro);
+    font-size: 1.25rem;
+}
+
+.autora-info p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.lista-links-contato {
+    margin-top: 14px;
+}
+
+.item-link-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.item-link-contato img {
+    width: 18px;
+    height: 18px;
+}
+
+.email-autora {
+    margin-top: 12px;
+}
+
+/* FORMULÁRIO */
+
+.bloco-formulario {
+    margin-top: 34px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.form-contato label {
+    font-weight: 600;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.form-contato textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.btn-enviar-mensagem {
+    width: fit-content;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--azul);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-enviar-mensagem:hover {
+    background-color: var(--azul-escuro);
+    transform: translateY(-2px);
+}
+
+/* =========================
    RESPONSIVIDADE
 ========================= */
 @media (max-width: 1024px) {
@@ -799,6 +939,20 @@ p {
         padding: 9px 10px;
         font-size: 14px;
     }
+
+   .autora-topo {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+   }
+   
+   .autora-info {
+       width: 100%;
+   }
+   
+   .btn-enviar-mensagem {
+       width: 100%;
+   } 
 }
 
 @media (max-width: 600px) {
