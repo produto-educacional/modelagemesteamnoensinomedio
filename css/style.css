@@ -974,6 +974,142 @@ p {
 }
 
 /* =========================
+   COMPARTILHAMENTO
+========================= */
+
+.compartilhar-home {
+    margin-top: 20px;
+}
+
+.botoes-compartilhar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 22px;
+    justify-content: center;
+}
+
+.btn-compartilhar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-compartilhar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.icone-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-social img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+}
+
+/* variações */
+
+.btn-compartilhar.whatsapp {
+    background: #25D366;
+    color: #ffffff;
+}
+
+.btn-compartilhar.email {
+    background: var(--azul);
+    color: #ffffff;
+}
+
+.btn-compartilhar.copiar {
+    background: var(--fundo-secundario);
+    color: var(--texto);
+    border: 1px solid var(--borda);
+}
+
+.btn-compartilhar.nativo {
+    background: linear-gradient(135deg, var(--azul), var(--azul-escuro));
+    color: #ffffff;
+}
+
+.mensagem-copiado {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 0.92rem;
+    color: var(--texto-suave);
+    min-height: 20px;
+}
+
+.area-qrcode {
+    margin-top: 30px;
+    padding: 24px;
+    background: linear-gradient(135deg, #fcfcfa, #f7fbfc);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: var(--sombra);
+}
+
+.area-qrcode h3 {
+    margin-bottom: 10px;
+    color: var(--azul-escuro);
+    font-size: 1.15rem;
+}
+
+.area-qrcode p {
+    max-width: 620px;
+    margin: 0 auto 18px auto;
+    color: var(--texto-suave);
+    text-align: center;
+}
+
+.qrcode-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode-box img {
+    width: 180px;
+    height: 180px;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    .botoes-compartilhar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-compartilhar {
+        width: 100%;
+    }
+
+    .qrcode-box img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* =========================
    RESPONSIVIDADE
 ========================= */
 @media (max-width: 1024px) {
