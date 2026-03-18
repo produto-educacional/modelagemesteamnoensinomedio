@@ -140,27 +140,30 @@
                     <div class="secao-corpo">
                         <p>Caso prefira, envie sua mensagem por meio do formulário abaixo.</p>
 
-                        <form class="form-contato" action="https://formsubmit.co/arielycaruzo@alunos.utfpr.edu.br.com" method="POST">
-                            <!-- Configurações opcionais do FormSubmit -->
+                        <form class="form-contato" action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
                             <input type="hidden" name="_subject" value="Nova mensagem enviada pelo site do Produto Educacional">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="table">
-
-                            <div>
+                        
+                            <div class="form-grupo">
                                 <label for="nome">Nome</label>
                                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                             </div>
-
-                            <div>
+                        
+                            <div class="form-grupo">
                                 <label for="email">E-mail</label>
                                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
                             </div>
-
-                            <div>
+                        
+                            <div class="form-grupo">
                                 <label for="mensagem">Mensagem</label>
                                 <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required></textarea>
                             </div>
-
+                        
+                            <p class="form-observacao">
+                                Sua mensagem será enviada diretamente para o e-mail das autoras.
+                            </p>
+                        
                             <button type="submit" class="btn-enviar-mensagem">Enviar mensagem</button>
                         </form>
                     </div>
