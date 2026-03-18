@@ -196,62 +196,35 @@
        </div>
    
        <div class="secao-corpo">
-           <p>
-               Se este material foi útil para você, compartilhe com outros professores, colegas e instituições. Assim, mais pessoas poderão conhecer, utilizar e adaptar as atividades propostas.
-           </p>
+           <p>Se este material foi útil para você, compartilhe com outros professores.</p>
    
-           <div class="botoes-compartilhar">
-               <a id="link-whatsapp"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn-compartilhar whatsapp"
-                  aria-label="Compartilhar no WhatsApp">
-                   <span class="icone-social">
-                       <img src="img/whatsapp.png" alt="">
-                   </span>
-                   <span>WhatsApp</span>
-               </a>
-   
-               <a id="link-email"
-                  href="#"
-                  class="btn-compartilhar email"
-                  aria-label="Compartilhar por e-mail">
-                   <span class="icone-social">
-                       <img src="img/o-email.png" alt="">
-                   </span>
-                   <span>E-mail</span>
-               </a>
-   
-               <button type="button"
-                       onclick="copiarLink()"
-                       class="btn-compartilhar copiar"
-                       aria-label="Copiar link do site">
-                   <span class="icone-social">
-                       <img src="img/link.png" alt="">
-                   </span>
-                   <span>Copiar link</span>
-               </button>
-   
-               <button type="button"
-                       id="btn-share-nativo"
-                       onclick="compartilharNativo()"
-                       class="btn-compartilhar nativo"
-                       aria-label="Compartilhar usando o celular">
-                   <span class="icone-social">
-                       <img src="img/compartilhar.png" alt="">
-                   </span>
-                   <span>Compartilhar</span>
-               </button>
-           </div>
-   
+            <div class="botoes-compartilhar">
+            <a id="link-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn-compartilhar whatsapp">
+                <span class="icone-social"><img src="imagens/icone-whatsapp.png" alt=""></span>
+                <span>WhatsApp</span>
+            </a>
+
+            <a id="link-email" href="#" class="btn-compartilhar email">
+                <span class="icone-social"><img src="imagens/icone-email.png" alt=""></span>
+                <span>E-mail</span>
+            </a>
+
+            <button type="button" onclick="copiarLink()" class="btn-compartilhar copiar">
+                <span class="icone-social"><img src="imagens/icone-link.png" alt=""></span>
+                <span>Copiar link</span>
+            </button>
+
+            <button type="button" id="btn-share-nativo" onclick="compartilharNativo()" class="btn-compartilhar nativo">
+                <span class="icone-social"><img src="imagens/icone-compartilhar.png" alt=""></span>
+                <span>Compartilhar</span>
+            </button>
+        </div>
+          
            <p id="mensagem-copiado" class="mensagem-copiado" aria-live="polite"></p>
    
            <div class="area-qrcode">
                <h3>Ou acesse pelo QR Code</h3>
-               <p>
-                   Aponte a câmera do celular para abrir rapidamente esta página.
-               </p>
+               <p>Aponte a câmera do celular para abrir rapidamente esta página.</p>
    
                <div class="qrcode-box">
                    <img id="qrcode-img" src="" alt="QR Code para compartilhar esta página">
@@ -260,6 +233,7 @@
        </div>
    </section>
    </main>   
+   
    <!--Botão topo-->
    <button id="btn-topo" onclick="voltarTopo()">↑</button>
    
