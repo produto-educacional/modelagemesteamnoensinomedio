@@ -946,6 +946,184 @@ p {
     color: #ffffff;
 }
 
+/* =========================
+   COMPARTILHAMENTO (HOME)
+========================= */
+
+.compartilhar-home {
+    max-width: 1400px;
+    margin: 30px auto 40px auto;
+    border-top: 1px solid var(--borda);
+    padding-top: 24px;
+}
+
+/* texto */
+
+.compartilhar-home .secao-corpo {
+    text-align: center;
+}
+
+.compartilhar-home .secao-corpo > p {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--texto-suave);
+}
+
+/* BOTÕES */
+
+.botoes-compartilhar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 22px;
+    justify-content: center;
+}
+
+.btn-compartilhar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 20px;
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: none;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-compartilhar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ÍCONES */
+
+.icone-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-social img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+}
+
+/* CORES DOS BOTÕES */
+
+.btn-compartilhar.whatsapp {
+    background: #25D366;
+    color: #ffffff;
+}
+
+.btn-compartilhar.email {
+    background: var(--azul);
+    color: #ffffff;
+}
+
+.btn-compartilhar.copiar {
+    background: var(--fundo-secundario);
+    color: var(--texto);
+    border: 1px solid var(--borda);
+}
+
+.btn-compartilhar.nativo {
+    background: linear-gradient(135deg, var(--azul), var(--azul-escuro));
+    color: #ffffff;
+}
+
+/* MENSAGEM */
+
+.mensagem-copiado {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 0.92rem;
+    color: var(--texto-suave);
+    min-height: 20px;
+}
+
+/* QR CODE */
+
+.area-qrcode {
+    margin-top: 30px;
+    padding: 24px;
+
+    background: linear-gradient(135deg, #fcfcfa, #f7fbfc);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+
+    text-align: center;
+    box-shadow: var(--sombra);
+}
+
+.area-qrcode h3 {
+    margin-bottom: 10px;
+    color: var(--azul-escuro);
+    font-size: 1.15rem;
+}
+
+.area-qrcode p {
+    max-width: 620px;
+    margin: 0 auto 18px auto;
+    color: var(--texto-suave);
+    text-align: center;
+}
+
+/* caixa do QR */
+
+.qrcode-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode-box img {
+    width: 180px;
+    height: 180px;
+    padding: 12px;
+
+    background: #ffffff;
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    .botoes-compartilhar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-compartilhar {
+        width: 100%;
+    }
+
+    .qrcode-box img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .compartilhar-home {
+        margin: 20px auto 30px auto;
+    }
+}
 
 /* =========================
    RESPONSIVIDADE
