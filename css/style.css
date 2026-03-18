@@ -949,26 +949,40 @@ p {
 /* =========================
    COMPARTILHAMENTO (HOME)
 ========================= */
-
+/* =========================
+   COMPARTILHAMENTO (BLOCO SEPARADO)
+========================= */
 
 .compartilhar-home {
-    max-width: 1400px;
-    margin: 30px auto 40px auto;
-    border-top: 1px solid var(--borda);
-    padding-top: 24px;
+    max-width: 1200px;
+    margin: 50px auto 50px auto;
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 22px;
+    box-shadow: var(--sombra);
+    overflow: hidden;
+}
+
+.compartilhar-home .secao-topo {
+    background: linear-gradient(135deg, var(--azul-suave), #f7fbfc);
+    border-bottom: 1px solid var(--borda);
+    padding: 18px 24px;
 }
 
 .compartilhar-home .secao-corpo {
     text-align: center;
+    padding: 30px 24px 32px;
 }
 
 .compartilhar-home .secao-corpo > p {
-    max-width: 700px;
+    max-width: 760px;
     margin: 0 auto;
     color: var(--texto-suave);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-/* BOTÕES DE COMPARTILHAMENTO */
+/* BOTÕES */
 
 .botoes-compartilhar {
     display: flex;
@@ -1053,7 +1067,6 @@ p {
     border: 1px solid var(--borda);
     border-radius: 18px;
     text-align: center;
-    box-shadow: var(--sombra);
 }
 
 .area-qrcode h3 {
@@ -1088,6 +1101,15 @@ p {
 /* RESPONSIVO */
 
 @media (max-width: 768px) {
+    .compartilhar-home {
+        margin: 30px 16px 35px 16px;
+        border-radius: 18px;
+    }
+
+    .compartilhar-home .secao-corpo {
+        padding: 22px 18px 24px;
+    }
+
     .botoes-compartilhar {
         flex-direction: column;
         align-items: stretch;
@@ -1102,12 +1124,7 @@ p {
         width: 160px;
         height: 160px;
     }
-
-    .compartilhar-home {
-        margin: 20px auto 30px auto;
-    }
 }
-
 
 /* =========================
    RESPONSIVIDADE
