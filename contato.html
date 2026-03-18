@@ -2,27 +2,33 @@
 <html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-sacale=1.0">
    <title>Contato</title>
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="slide/slide.css">
    <link rel="stylesheet" href="css/shortcuts.css">
    <link rel="stylesheet" href="css/acessibilidade.css">
-
+   <link rel="icon" type="image/png" sizes="160x160" href="img/favicon.png">
+   <!-- Ícones -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
    <script src="js/script.js" defer></script>
 </head>
 
-<body id="topo">
+<body>
 
+   <!--Cabeçalho fixo-->
    <header class="header">
       <button class="menu-btn" id="menuToggle" aria-label="Abrir menu">
          <i class="fas fa-bars"></i>
       </button>
    </header>
 
+   <!-- MENU DE ACESSIBILIDADE -->
    <div class="acessibilidade">
-      <button id="botao-acessibilidade" aria-expanded="false">Acessibilidade</button>
+      <button id="botao-acessibilidade" aria-expanded="false">
+         Acessibilidade
+      </button>
       <div id="opcoes-acessibilidade" class="escondido">
          <button id="aumentar-fonte">A+</button>
          <button id="diminuir-fonte">A-</button>
@@ -30,87 +36,165 @@
       </div>
    </div>
 
-   <nav class="sidebar" id="sidebar">
-      <ul>
-         <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
-         <li><a href="sobre.html"><i class="fas fa-book"></i> Sobre o PE</a></li>
-         <li><a href="teoria.html"><i class="fas fa-lightbulb"></i> Teoria</a></li>
-         <li><a href="atividades.html"><i class="fas fa-cogs"></i> Atividades</a></li>
-         <li><a href="sugestões.html"><i class="fas fa-chalkboard-teacher"></i> Sugestões pedagógicas</a></li>
-         <li><a href="contato.html" class="active"><i class="fas fa-envelope"></i> Contato</a></li>
-      </ul>
-   </nav>
+   <!--Menu lateral-->
+      <nav class="sidebar" id="sidebar">
+         <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+            <li><a href="sobre.html"><i class="fas fa-book"></i> Sobre o PE</a></li>
+            <li><a href="teoria.html"><i class="fas fa-lightbulb"></i> Teoria</a></li>
+            <li><a href="atividades.html"><i class="fas fa-cogs"></i> Atividades</a></li>
+            <li><a href="sugestões.html"><i class="fas fa-chalkboard-teacher"></i> Sugestões pedagógicas</a></li>
+            <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+         </ul>
+      </nav>
 
-   <main class="content">
-      <section class="main-area">
+    <!-- Conteúdo -->
+    <main class="content">
+        <section class="main-area contato-page">
+            <article class="posts">
 
-         <article class="posts">
+                <div class="titulo-pagina">
+                    <h1>Contato</h1>
+                    <p class="texto-introdutorio-contato">Caso você tenha dúvidas sobre as atividades propostas, deseje compartilhar experiências realizadas em sala de aula ou contribuir com sugestões, sinta-se à vontade para entrar em contato.</p>
+                </div>
 
-            <div class="titulo-pagina">
-               <h1>Contato</h1>
-               <p>
-                  Caso deseje compartilhar experiências, tirar dúvidas ou dialogar sobre o uso das atividades,
-                  entre em contato.
-               </p>
-            </div>
+                <section class="secao-conteudo">
+                    <div class="secao-topo">
+                        <div class="secao-icone">✉</div>
+                        <h2 class="secao-titulo">Autoras</h2>
+                    </div>
 
-            <section class="secao-conteudo">
-               <div class="secao-topo">
-                  <div class="secao-icone"><i class="fas fa-envelope-open-text"></i></div>
-                  <h2 class="secao-titulo">Informações para contato</h2>
-               </div>
-               <div class="secao-corpo">
-                  <div class="card-contato">
-                     <p><strong>Ariely Aparecida Caruzo</strong></p>
-                     <p>Programa de Pós-Graduação em Ensino de Matemática – UTFPR</p>
-                     <p>Câmpus Cornélio Procópio e Londrina</p>
-                     <p><strong>E-mail:</strong> seuemail@exemplo.com</p>
-                  </div>
+                    <div class="secao-corpo">
+                        <div class="contato-autoras">
 
-                  <div class="caixa-info">
-                     <p>
-                        Você também pode utilizar este espaço para compartilhar adaptações realizadas em sala de aula,
-                        sugestões de uso das atividades e comentários sobre a experiência de navegação no site.
-                     </p>
-                  </div>
-               </div>
-            </section>
+                            <!-- Autora 1 -->
+                            <div class="autora-card">
+                                <div class="autora-topo">
+                                    <img src="imagens/ariely.jpg" alt="Foto de Ariely Aparecida Caruzo" class="foto-autora">
 
-            <div class="nav-paginas">
-               <a href="sugestões.html">← Página anterior: Sugestões pedagógicas</a>
-               <a href="index.html">Voltar ao início →</a>
-            </div>
+                                    <div class="autora-info">
+                                        <h3>Ariely Aparecida Caruzo</h3>
+                                        <p>Graduada em Licenciatura em Matemática pela Universidade Estadual do Paraná. Possui pós-graduação em Tecnologias e Ensino de Matemática e em Educação Matemática: Estratégias, Métodos e Tecnologias. Graduanda em Licenciatura em Física pelo Centro Universitário UniFatecie. Professora da rede pública do estado do Paraná atuante com as disciplinas de Matemática, Educação Financeira, Robótica Educacional e Itinerários Formativos do Novo Ensino Médio. Participante do grupo de pesquisa GEPMIT - Grupo de Estudo e Pesquisa em Modelagem Matemática e Tecnologias. Bolsista CNPq do Programa de Iniciação Científica em 2018/2019 e 2019/2020. Atualmente faz parte do Programa Rede de Clubes Paraná faz Ciência Maker como Bolsista de Apoio Técnico em Extensão no País do CNPq - Nível A. </p>
 
-         </article>
+                                        <div class="lista-links-contato">
+                                            <div class="item-link-contato">
+                                                <img src="imagens/icone-lattes.png" alt="Ícone do Currículo Lattes">
+                                                <a href="COLE_AQUI_O_LINK_DO_LATTES" target="_blank" rel="noopener noreferrer">
+                                                    Currículo Lattes
+                                                </a>
+                                            </div>
 
-         <aside class="shortcuts">
+                                            <div class="item-link-contato">
+                                                <img src="imagens/icone-orcid.png" alt="Ícone do Orcid">
+                                                <a href="COLE_AQUI_O_LINK_DO_ORCID" target="_blank" rel="noopener noreferrer">
+                                                    Orcid ID
+                                                </a>
+                                            </div>
+                                        </div>
 
-            <div class="shortcut-box">
-               <div class="shortcut-title">Fale comigo</div>
-               <p class="shortcut-texto">
-                  Este espaço pode ser utilizado para dúvidas, sugestões e relatos de experiências com as atividades do site.
-               </p>
-            </div>
+                                        <p class="email-autora"><strong>E-mail:</strong> arielycaruzo@alunos.utfpr.edu.br</p>
+                                    </div>
+                                </div>
+                            </div>
 
-         </aside>
-      </section>
-   </main>
+                            <!-- Autora 2 -->
+                            <div class="autora-card">
+                                <div class="autora-topo">
+                                    <img src="imagens/karina.jpg" alt="Foto de Karina Alexandra Russo da Silva" class="foto-autora">
 
+                                    <div class="autora-info">
+                                        <h3>Karina Alessandra Pessoa da Silva</h3>
+                                        <p> Professora do Magistério Superior, Classe Associado, Nível 3, da Universidade Tecnológica Federal do Paraná, Câmpus Londrina, atuando nos cursos de Engenharia e no Programa de PósGraduação Mestrado Profissional em Ensino de Matemática (PPGMAT). Graduada em Matemática (Licenciatura) pela Universidade Estadual de Londrina (2000). Especialista em Educação Matemática pela UEL (2007). Mestre em Ensino de Ciências e Educação Matemática pela UEL (2008). Doutora em Ensino de Ciências e Educação Matemática da Universidade Estadual de Londrina (2013). Tem experiência na área de Educação Matemática com ênfase em Ensino e Aprendizagem da Matemática, atuando principalmente nos seguintes temas: Modelagem Matemática, Formação de professores em Modelagem Matemática, Educação STEAM, Semiótica Peirceana, Registros de Representação Semiótica e Livro Didático. Fez parte do GRUPEMMAT - Grupo de Pesquisas sobre Modelagem Matemática e Educação Matemática da UEL de 2005 a 2021. É uma das coordenadoras do Grupo de Estudos e Pesquisas em Modelagem, Investigação e Tecnologia (GEPMIT) / UTFPR, desde 2015. Trabalhou por 10 anos com preparação e elaboração de obras didáticas de Matemática e de Ciências Naturais do Ensino Fundamental. Membro da diretoria regional da Sociedade Brasileira de Educação Matemática (Paraná) (2013-2019). Coordenadora do GT 10 - Modelagem Matemática - da SBEM (2019-2021). Bolsista de Produtividade em Pesquisa da Fundação Araucária (2025-2027). Atualmente, coordenadora adjunta do PPGMAT.</p>
+
+                                        <div class="lista-links-contato">
+                                            <div class="item-link-contato">
+                                                <img src="imagens/icone-lattes.png" alt="Ícone do Currículo Lattes">
+                                                <a href="COLE_AQUI_O_LINK_DO_LATTES" target="_blank" rel="noopener noreferrer">
+                                                    Currículo Lattes
+                                                </a>
+                                            </div>
+
+                                            <div class="item-link-contato">
+                                                <img src="imagens/icone-orcid.png" alt="Ícone do Orcid">
+                                                <a href="COLE_AQUI_O_LINK_DO_ORCID" target="_blank" rel="noopener noreferrer">
+                                                    Orcid ID
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <p class="email-autora"><strong>E-mail:</strong> karinasilva@utfpr.edu.br</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="secao-conteudo bloco-formulario">
+                    <div class="secao-topo">
+                        <div class="secao-icone">📝</div>
+                        <h2 class="secao-titulo">Formulário de contato</h2>
+                    </div>
+
+                    <div class="secao-corpo">
+                        <p>Caso prefira, envie sua mensagem por meio do formulário abaixo.</p>
+
+                        <form class="form-contato" action="https://formsubmit.co/arielycaruzo@alunos.utfpr.edu.br.com" method="POST">
+                            <!-- Configurações opcionais do FormSubmit -->
+                            <input type="hidden" name="_subject" value="Nova mensagem enviada pelo site do Produto Educacional">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+
+                            <div>
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                            </div>
+
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                            </div>
+
+                            <div>
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-enviar-mensagem">Enviar mensagem</button>
+                        </form>
+                    </div>
+                </section>
+
+            </article>
+        </section>
+    </main>
+
+   <!--Botão topo-->
    <button id="btn-topo" onclick="voltarTopo()">↑</button>
 
+   <!-- Rodapé -->
    <footer class="footer">
-      <div class="rodape-container">
-         <div class="rodape-info">
-            <img src="img/imagem-logo.png" alt="Logos do PPGMAT e UTFPR" class="logo-img">
-            <p>
-               Produto educacional desenvolvido no âmbito do <strong>Programa de Pós-Graduação em Ensino de Matemática (PPGMAT)</strong>
-               da <strong>Universidade Tecnológica Federal do Paraná (UTFPR)</strong>, câmpus Cornélio Procópio e Londrina.
-            </p>
-            <p class="copyright">Desenvolvido por Ariely Caruzo | © 2026 – Todos os direitos reservados.</p>
-         </div>
-      </div>
-      <img src="img/imagem-rodape.png" alt="Elementos gráficos educacionais" class="footer-img">
+   
+     <div class="rodape-container">
+   
+       <div class="rodape-info">
+         <img src="img/imagem-logo.png" alt="Logos do PPGMAT e UTFPR" class="logo-img">
+   
+         <p>
+           Produto educacional desenvolvido no âmbito do <strong>Programa de Pós-Graduação em Ensino de Matemática (PPGMAT)</strong> da <strong>Universidade Tecnológica Federal do Paraná (UTFPR)</strong>, Câmpus Cornélio Procópio e Londrina.
+         </p>
+   
+         <p class="copyright">
+           Desenvolvido por Ariely Caruzo | © 2026 – Todos os direitos reservados.
+         </p>
+   
+       </div>
+   
+     </div>
+   
+     <img src="img/imagem-rodape.png" alt="Elementos gráficos educacionais" class="footer-img">
+   
    </footer>
-
 </body>
 </html>
