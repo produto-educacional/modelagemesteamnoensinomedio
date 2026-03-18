@@ -949,9 +949,6 @@ p {
 /* =========================
    COMPARTILHAMENTO (HOME)
 ========================= */
-/* =========================
-   COMPARTILHAMENTO (BLOCO SEPARADO)
-========================= */
 
 .compartilhar-home {
     max-width: 1200px;
@@ -1028,13 +1025,15 @@ p {
 }
 
 .btn-compartilhar.whatsapp {
-    background: linear-gradient(135deg, #25D366, #1ebe5d);
-    color: #ffffff;
+    background: #ffffff;
+    color: var(--texto);
+    border: 1px solid var(--borda);
 }
 
 .btn-compartilhar.email {
-    background: linear-gradient(135deg, var(--azul), var(--azul-escuro));
-    color: #ffffff;
+    background: #ffffff;
+    color: var(--texto);
+    border: 1px solid var(--borda);
 }
 
 .btn-compartilhar.copiar {
@@ -1044,8 +1043,9 @@ p {
 }
 
 .btn-compartilhar.nativo {
-    background: linear-gradient(135deg, #6faeb8, #4f8d97);
-    color: #ffffff;
+    background: #ffffff;
+    color: var(--texto);
+    border: 1px solid var(--borda);
 }
 
 /* MENSAGEM */
