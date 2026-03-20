@@ -200,7 +200,7 @@ p {
 .posts {
     flex: 3;
     background-color: var(--card);
-    padding: 28px;
+    padding: 28px 36px;
     border: 1px solid var(--borda);
     font-size: 1rem;
     border-radius: var(--raio);
@@ -325,9 +325,8 @@ p {
 
 .atividade-individual > * {
     width: 100%;
-    max-width: 1100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .titulo-pagina-atividade {
