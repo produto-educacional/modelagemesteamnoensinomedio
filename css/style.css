@@ -317,11 +317,17 @@ p {
 /* =========================
    PÁGINA DE ATIVIDADE
 ========================= */
-
 .atividade-individual {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 30px;
+}
+
+.atividade-individual > * {
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .titulo-pagina-atividade {
@@ -363,6 +369,9 @@ p {
 .downloads-atividade,
 .bloco-texto,
 .galeria-atividade {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 28px 32px;
     background: linear-gradient(135deg, #fcfcfa, #f7fbfc);
     border: 1px solid var(--borda);
@@ -370,7 +379,6 @@ p {
     box-shadow: var(--sombra);
     line-height: 1.7;
 }
-
 .bloco-destaque {
     background: linear-gradient(135deg, var(--azul-suave), #f7fbfc);
     border-left: 6px solid var(--azul);
@@ -396,11 +404,6 @@ p {
 
 .atividade-individual h2 {
     scroll-margin-top: 110px;
-}
-
-/* Espaçamento entre blocos */
-.atividade-individual {
-    gap: 26px;
 }
 
 /* =========================
@@ -632,14 +635,14 @@ p {
         font-size: 0.98rem;
     }
 
-    .bloco-destaque,
-    .atividade-info,
-    .downloads-atividade,
-    .bloco-texto,
-    .galeria-atividade {
-        padding: 18px;
-    }
-
+.bloco-destaque,
+.atividade-info,
+.downloads-atividade,
+.bloco-texto,
+.galeria-atividade {
+    padding: 20px;
+    max-width: calc(100% - 24px);
+}
     .galeria-slider {
         gap: 10px;
     }
