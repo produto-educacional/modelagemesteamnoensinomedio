@@ -329,6 +329,16 @@ p {
     margin: 0 auto;
 }
 
+.bloco-texto,
+.bloco-destaque,
+.atividade-info,
+.downloads-atividade,
+.galeria-atividade,
+.sugestao-leitura {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
 .titulo-pagina-atividade {
     text-align: center;
     margin-bottom: 6px;
@@ -351,8 +361,9 @@ p {
 }
 
 .atividade-capa {
-    width: 100%;
-    max-height: 420px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
     object-fit: cover;
     border-radius: 18px;
     border: 1px solid var(--borda);
