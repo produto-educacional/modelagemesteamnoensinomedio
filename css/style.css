@@ -320,14 +320,14 @@ p {
 .atividade-individual {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 .atividade-individual > * {
     width: 100%;
     max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .titulo-pagina-atividade {
@@ -371,7 +371,7 @@ p {
 .galeria-atividade {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 30px 30px 30px 30px;
     padding: 28px 32px;
     background: linear-gradient(135deg, #fcfcfa, #f7fbfc);
     border: 1px solid var(--borda);
