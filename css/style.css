@@ -206,7 +206,6 @@ p {
     border-radius: var(--raio);
     box-shadow: var(--sombra);
     line-height: 1.5;
-
 }
 
 .shortcuts {
@@ -238,8 +237,8 @@ p {
 }
 
 .imagem-teoria img {
-   display: block;
-   margin: 0 auto;
+    display: block;
+    margin: 0 auto;
     max-width: 700px;
     width: 100%;
 }
@@ -248,7 +247,7 @@ p {
     font-size: 0.9rem;
     color: #555;
     margin-top: 8px;
-   text-aling:center;
+    text-align: center;
 }
 
 /* =========================
@@ -315,272 +314,9 @@ p {
     margin-top: 28px;
 }
 
-/* =========================
-   TÍTULO E SUBTÍTULO DA ATIVIDADE
-========================= */
-
-.titulo-pagina-atividade {
-    text-align: center;
-    margin-bottom: 18px;
-}
-
-.titulo-pagina-atividade h1 {
-    font-size: 2rem;
-    color: var(--azul-escuro);
-    margin-bottom: 12px;
-    line-height: 1.3;
-}
-
-.subtitulo-atividade {
-    max-width: 850px;
-    margin: 0 auto 8px auto;
-    color: var(--texto-suave);
-    font-size: 1.05rem;
-    text-align: center;
-    line-height: 1.6;
-}
-
-/* =========================
-   BLOCO DE LEITURA
-========================= */
-
-.sugestao-leitura .leitura-box {
-    margin-top: 18px;
-    background: linear-gradient(135deg, #fcfcfa, #f7fbfc);
-    border: 1px solid var(--borda);
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: var(--sombra);
-}
-
-.sugestao-leitura .leitura-box h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: var(--azul-escuro);
-    font-size: 1.15rem;
-    line-height: 1.4;
-}
-
-.sugestao-leitura .leitura-box p {
-    margin-bottom: 16px;
-    color: var(--texto-suave);
-}
-
-/* =========================
-   GALERIA DESLIZANTE
-========================= */
-
-.galeria-slider {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-top: 16px;
-}
-
-.galeria-track {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 4px 2px 10px;
-    width: 100%;
-    scrollbar-width: thin;
-    scrollbar-color: var(--azul) var(--fundo-secundario);
-}
-
-.galeria-track::-webkit-scrollbar {
-    height: 10px;
-}
-
-.galeria-track::-webkit-scrollbar-track {
-    background: var(--fundo-secundario);
-    border-radius: 999px;
-}
-
-.galeria-track::-webkit-scrollbar-thumb {
-    background: var(--azul);
-    border-radius: 999px;
-}
-
-.galeria-track img {
-    flex: 0 0 auto;
-    width: 320px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 16px;
-    border: 1px solid var(--borda);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    background: #ffffff;
-}
-
-.galeria-btn {
-    width: 42px;
-    height: 42px;
-    border: none;
-    border-radius: 50%;
-    background: #ffffff;
-    color: var(--azul-escuro);
-    border: 1px solid var(--borda);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.25s ease;
-    flex-shrink: 0;
-}
-
-.galeria-btn:hover {
-    background: var(--azul-suave);
-    transform: translateY(-2px);
-}
-
-.legenda-galeria {
-    margin-top: 14px;
-    margin-bottom: 0;
-    color: var(--texto-suave);
-    font-size: 0.95rem;
-    text-align: center;
-    line-height: 1.5;
-}
-
-/* =========================
-   AJUSTES DE BLOCOS DA ATIVIDADE
-========================= */
-
-.atividade-individual .bloco-texto,
-.atividade-individual .bloco-destaque,
-.atividade-individual .atividade-info,
-.atividade-individual .downloads-atividade,
-.atividade-individual .galeria-atividade {
-    margin-top: 6px;
-}
-
-.atividade-individual .bloco-texto p + p,
-.atividade-individual .bloco-destaque p + p {
-    margin-top: 14px;
-}
-
-.atividade-individual h2 {
-    scroll-margin-top: 110px;
-}
-
-/* =========================
-   NAVEGAÇÃO ENTRE PÁGINAS
-========================= */
-
-.nav-paginas {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.nav-paginas a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    background: var(--fundo-secundario);
-    border: 1px solid var(--borda);
-    border-radius: 999px;
-    padding: 12px 18px;
-    color: var(--texto);
-    font-weight: 500;
-    transition: all 0.25s ease;
-}
-
-.nav-paginas a:hover {
-    background: var(--azul-suave);
-    color: var(--azul-escuro);
-    transform: translateY(-2px);
-}
-
-/* =========================
-   RESPONSIVIDADE
-========================= */
-
-@media (max-width: 900px) {
-    .titulo-pagina-atividade h1 {
-        font-size: 1.75rem;
-    }
-
-    .subtitulo-atividade {
-        font-size: 1rem;
-    }
-
-    .galeria-track img {
-        width: 280px;
-        height: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .titulo-pagina-atividade {
-        margin-bottom: 16px;
-    }
-
-    .titulo-pagina-atividade h1 {
-        font-size: 1.55rem;
-    }
-
-    .subtitulo-atividade {
-        text-align: center;
-        font-size: 0.98rem;
-    }
-
-    .galeria-slider {
-        gap: 10px;
-    }
-
-    .galeria-btn {
-        width: 38px;
-        height: 38px;
-    }
-
-    .galeria-track img {
-        width: 240px;
-        height: 180px;
-    }
-
-    .sugestao-leitura .leitura-box {
-        padding: 18px;
-    }
-
-    .nav-paginas {
-        flex-direction: column;
-    }
-
-    .nav-paginas a {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .titulo-pagina-atividade h1 {
-        font-size: 1.4rem;
-    }
-
-    .subtitulo-atividade {
-        font-size: 0.95rem;
-    }
-
-    .galeria-track img {
-        width: 210px;
-        height: 160px;
-    }
-
-    .legenda-galeria {
-        font-size: 0.92rem;
-    }
-}
 /* =====================
    RODAPÉ
 ===================== */
-
 .footer {
     margin-top: 60px;
     background: #f1f1eb;
@@ -624,32 +360,23 @@ p {
 }
 
 /* BOTÃO VOLTAR AO TOPO */
-
 #btn-topo {
     position: fixed;
-    right: 12px;      /* alinhado com acessibilidade */
-    bottom: 20px;     /* abaixo do botão de acessibilidade */
-
+    right: 12px;
+    bottom: 20px;
     width: 48px;
     height: 48px;
-
     background-color: #6faeb8;
     color: #ffffff;
-
     border: none;
     border-radius: 50%;
-
     font-size: 20px;
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     box-shadow: 0 4px 10px rgba(0,0,0,0.18);
-
     transition: all 0.25s ease;
-
     z-index: 9998;
 }
 
@@ -658,24 +385,9 @@ p {
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-    #btn-topo {
-        right: 95px;
-        bottom: 95px;
-        width: 42px;
-        height: 42px;
-        font-size: 18px;
-    }
-
-    .acessibilidade {
-        bottom: 60px;
-    }
-}
-
 /* =========================
    PADRÃO VISUAL DAS PÁGINAS INTERNAS
 ========================= */
-
 .titulo-pagina {
     text-align: center;
     margin-bottom: 26px;
@@ -786,29 +498,6 @@ p {
     transform: translateY(-2px);
 }
 
-.nav-paginas {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.nav-paginas a {
-    text-decoration: none;
-    background: var(--fundo-secundario);
-    border: 1px solid var(--borda);
-    border-radius: 999px;
-    padding: 10px 16px;
-    color: var(--texto);
-    transition: all 0.25s ease;
-}
-
-.nav-paginas a:hover {
-    background: var(--azul-suave);
-    color: var(--azul-escuro);
-}
-
 .card-contato {
     background: var(--fundo-secundario);
     border: 1px solid var(--borda);
@@ -823,24 +512,6 @@ p {
 
 .card-contato p:last-child {
     margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-    .titulo-pagina h1 {
-        font-size: 1.7rem;
-    }
-
-    .titulo-pagina p {
-        font-size: 1rem;
-    }
-
-    .secao-topo {
-        padding: 14px 16px;
-    }
-
-    .secao-corpo {
-        padding: 18px;
-    }
 }
 
 /* =========================
@@ -938,7 +609,6 @@ p {
 /* =========================
    FORMULÁRIO DE CONTATO
 ========================= */
-
 .bloco-formulario {
     margin-top: 34px;
 }
@@ -1036,21 +706,9 @@ p {
     color: var(--texto-suave);
 }
 
-@media (max-width: 768px) {
-    .form-contato {
-        padding: 20px;
-    }
-
-    .btn-enviar-mensagem {
-        width: 100%;
-        align-self: stretch;
-    }
-}
-
 /* =========================
    BOTÃO VOLTAR AO INÍCIO
 ========================= */
-
 .voltar-inicio-container {
     display: flex;
     justify-content: center;
@@ -1079,7 +737,6 @@ p {
 /* =========================
    COMPARTILHAMENTO (HOME)
 ========================= */
-
 .compartilhar-home {
     max-width: 1200px;
     margin: 50px auto 50px auto;
@@ -1109,8 +766,6 @@ p {
     line-height: 1.6;
 }
 
-/* BOTÕES */
-
 .botoes-compartilhar {
     display: flex;
     flex-wrap: wrap;
@@ -1126,13 +781,15 @@ p {
     gap: 10px;
     padding: 12px 22px;
     border-radius: 999px;
-    border: none;
+    border: 1px solid var(--borda);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
     cursor: pointer;
     transition: all 0.25s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    background: #ffffff;
+    color: var(--texto);
 }
 
 .btn-compartilhar:hover {
@@ -1154,32 +811,6 @@ p {
     display: block;
 }
 
-.btn-compartilhar.whatsapp {
-    background: #ffffff;
-    color: var(--texto);
-    border: 1px solid var(--borda);
-}
-
-.btn-compartilhar.email {
-    background: #ffffff;
-    color: var(--texto);
-    border: 1px solid var(--borda);
-}
-
-.btn-compartilhar.copiar {
-    background: #ffffff;
-    color: var(--texto);
-    border: 1px solid var(--borda);
-}
-
-.btn-compartilhar.nativo {
-    background: #ffffff;
-    color: var(--texto);
-    border: 1px solid var(--borda);
-}
-
-/* MENSAGEM */
-
 .mensagem-copiado {
     text-align: center;
     margin-top: 14px;
@@ -1187,8 +818,6 @@ p {
     color: var(--texto-suave);
     min-height: 20px;
 }
-
-/* QR CODE */
 
 .area-qrcode {
     margin-top: 30px;
@@ -1228,36 +857,8 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* RESPONSIVO */
-
-@media (max-width: 768px) {
-    .compartilhar-home {
-        margin: 30px 16px 35px 16px;
-        border-radius: 18px;
-    }
-
-    .compartilhar-home .secao-corpo {
-        padding: 22px 18px 24px;
-    }
-
-    .botoes-compartilhar {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .btn-compartilhar {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .qrcode-box img {
-        width: 160px;
-        height: 160px;
-    }
-}
-
 /* =========================
-   RESPONSIVIDADE
+   RESPONSIVIDADE GLOBAL
 ========================= */
 @media (max-width: 1024px) {
     .main-area {
@@ -1286,22 +887,6 @@ p {
 
     .atividades-grid {
         grid-template-columns: 1fr;
-    }
-
-    .atividade-individual h1 {
-        font-size: 1.7rem;
-    }
-
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .galeria-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .atividade-capa {
-        max-height: 320px;
     }
 }
 
@@ -1333,55 +918,85 @@ p {
         left: -270px;
     }
 
-    .botao-acessibilidade {
+    #botao-acessibilidade {
         padding: 10px 14px;
         font-size: 14px;
     }
 
-    .opcoes-acessibilidade button {
+    #opcoes-acessibilidade button {
         padding: 9px 10px;
         font-size: 14px;
     }
 
-   .autora-topo {
-       flex-direction: column;
-       align-items: center;
-       text-align: center;
-   }
-   
-   .autora-info {
-       width: 100%;
-   }
-   
-   .btn-enviar-mensagem {
-       width: 100%;
-   } 
-}
-
-@media (max-width: 600px) {
-    .atividade-individual h1 {
-        font-size: 1.45rem;
+    #btn-topo {
+        right: 95px;
+        bottom: 95px;
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
     }
 
-    .atividade-individual > p:first-of-type {
+    .acessibilidade {
+        bottom: 60px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 1.7rem;
+    }
+
+    .titulo-pagina p {
         font-size: 1rem;
-        text-align: left;
     }
 
-    .bloco-destaque,
-    .atividade-info,
-    .downloads-atividade,
-    .bloco-texto,
-    .galeria-atividade {
+    .secao-topo {
+        padding: 14px 16px;
+    }
+
+    .secao-corpo {
         padding: 18px;
     }
 
-    .btn-download {
+    .autora-topo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .autora-info {
         width: 100%;
     }
 
-    .galeria-grid img {
-        height: auto;
+    .form-contato {
+        padding: 20px;
+    }
+
+    .btn-enviar-mensagem {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .compartilhar-home {
+        margin: 30px 16px 35px 16px;
+        border-radius: 18px;
+    }
+
+    .compartilhar-home .secao-corpo {
+        padding: 22px 18px 24px;
+    }
+
+    .botoes-compartilhar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-compartilhar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .qrcode-box img {
+        width: 160px;
+        height: 160px;
     }
 }
 
@@ -1406,16 +1021,5 @@ p {
 
     .shortcut-title {
         font-size: 15px;
-    }
-
-    .btn-enviar {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .compartilhar {
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
     }
 }
