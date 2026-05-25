@@ -50,54 +50,33 @@ section.slider{
     z-index: 20;
 }
 
-.nav-manual .manual-btn,
-.nav-auto div {
+/* ===== Bolinhas ===== */
+
+.nav-auto div{
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid #0b7d0b;
-    background: transparent !important;
-    transition: 0.3s ease;
+    border: 2px solid green;
+    background-color: transparent;
+    transition: 0.3s;
 }
 
 /* Espaçamento */
-.nav-manual .manual-btn:not(:last-child),
 .nav-auto div:not(:last-child){
     margin-right: 12px;
 }
 
-/* Hover */
-.manual-btn:hover{
-    transform: scale(1.1);
+/* Bolinha ativa */
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: green;
 }
 
-/* Apenas o ativo preenchido */
-#radio1:checked ~ .nav-auto .auto-btn1,
-#radio2:checked ~ .nav-auto .auto-btn2,
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: green;
+}
+
 #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: #0b7d0b !important;
-}
-
-/* Remove duplicação visual */
-.nav-manual {
-    z-index: 21;
-}
-
-.nav-auto {
-    z-index: 20;
-}
-
-#radio1:checked ~.primeiro{
-    margin-left: 0%;
-}
-
-#radio2:checked ~.primeiro{
-    margin-left: -25%;
-}
-
-#radio3:checked ~.primeiro{
-    margin-left: -50%;
+    background-color: green;
 }
 
 @media screen and (max-width:900px){
