@@ -52,31 +52,33 @@ section.slider{
 
 .nav-manual .manual-btn,
 .nav-auto div {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid var(--amarelo);
-    background-color: rgba(255,255,255,0.8);
-    transition: all 0.3s ease;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child){
+    margin-right: 12px;
 }
 
 .manual-btn:hover{
-    background-color: var(--amarelo);
     transform: scale(1.1);
-}
-
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 10px;
 }
 
 .nav-manual .manual-btn:hover{
     background-color: #efc13e;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2,
+/* Bolinha ativa */
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2,
 #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: #efc13e;
+    background-color: #0a7a0a;
 }
 
 #radio1:checked ~.primeiro{
