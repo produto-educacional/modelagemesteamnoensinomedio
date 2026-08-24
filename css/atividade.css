@@ -37,7 +37,11 @@
 
 .atividade-apresentacao {
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
     margin: 0 0 38px;
+    padding: 0;
 }
 
 .atividade-titulo {
@@ -68,13 +72,17 @@
     display: block;
 
     width: 100%;
-    max-width: none;
-    height: 380px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 6;
 
     margin: 0;
+    padding: 0;
 
     object-fit: cover;
     object-position: center;
+
+    box-sizing: border-box;
 
     border: 1px solid var(--borda);
     border-radius: 16px;
@@ -108,19 +116,6 @@ ESTRUTURA GERAL DAS SEÇÕES
 .atividade-individual .secao-cabecalho h2 {
     margin: 0;
 }
-
-
-/* =====================================================
-CONTEXTUALIZAÇÃO DA ATIVIDADE
-===================================================== */
-
-/*
-   A contextualização não recebe mais fundo branco,
-   borda ou sombra.
-
-   Ela permanece integrada à caixa principal da página,
-   evitando a sensação de vários cartões empilhados.
-*/
 
 .contextualizacao {
     margin-bottom: 38px !important;
@@ -683,10 +678,6 @@ INFORMAÇÕES DA ATIVIDADE
 
 @media (max-width: 900px) {
 
-    .atividade-capa {
-        height: 320px;
-    }
-
     .atividade-informacoes .info-grid,
     .downloads-botoes,
     .encaminhamentos-grid,
@@ -727,7 +718,6 @@ INFORMAÇÕES DA ATIVIDADE
     }
 
     .atividade-capa {
-        height: 240px;
         border-radius: 14px;
     }
 
