@@ -348,9 +348,10 @@ p {
 }
 
 .atividade-chamada {
-    max-width: 760px;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%;
+    max-width: none;
+    margin: 8px 0 16px;
+    text-align: left;
     color: var(--texto-suave);
     font-size: 1.05rem;
     line-height: 1.6;
