@@ -1,122 +1,160 @@
 /* =====================================================
+   ATIVIDADES – ESTILO ESPECÍFICO
+   Este arquivo deve ser carregado DEPOIS do style.css
+===================================================== */
+
+
+/* =====================================================
+   CONFIGURAÇÃO GERAL DA PÁGINA
+===================================================== */
+
+.atividade-individual {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.atividade-individual h1 {
+    margin: 0 0 12px;
+    color: var(--azul-escuro);
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.atividade-individual h2 {
+    margin: 0;
+    color: var(--azul-escuro);
+    font-size: 1.35rem;
+    line-height: 1.3;
+    scroll-margin-top: 110px;
+}
+
+.atividade-individual h3 {
+    color: var(--azul-escuro);
+}
+
+.atividade-individual p {
+    color: var(--texto);
+}
+
+
+/* =====================================================
    1. APRESENTAÇÃO DA ATIVIDADE
 ===================================================== */
 
 .atividade-apresentacao {
-    margin-bottom: 50px;
+    width: 100%;
+    margin: 0 0 40px;
 }
 
 .atividade-titulo {
-    margin-bottom: 25px;
-}
-
-.atividade-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-
-    padding: 8px 15px;
-    margin-bottom: 15px;
-
-    border-radius: 20px;
-
-    background: #e9f2ec;
-    color: #35634a;
-
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.atividade-tag i {
-    font-size: 0.85rem;
-}
-
-.atividade-individual h1 {
-    margin-bottom: 12px;
+    margin-bottom: 22px;
 }
 
 .atividade-chamada {
-    max-width: 800px;
-
+    max-width: 850px;
     margin: 0;
 
-    font-size: 1.25rem;
-    line-height: 1.6;
+    color: var(--texto-suave);
+    font-size: 1.08rem;
     font-weight: 500;
-
-    color: #4b5d52;
+    line-height: 1.7;
 }
 
 .atividade-capa {
     display: block;
 
     width: 100%;
-    max-height: 500px;
+    max-width: none;
+    height: 380px;
 
-    margin-top: 25px;
+    margin: 0;
 
     object-fit: cover;
+    object-position: center;
 
+    border: 1px solid var(--borda);
     border-radius: 18px;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--sombra);
 }
 
 
 /* =====================================================
-   2. ESTRUTURA GERAL DAS SEÇÕES
+   ESTRUTURA GERAL DAS SEÇÕES
 ===================================================== */
 
-.secao-atividade,
-.galeria-atividade {
-    margin: 55px 0;
+.atividade-individual .secao-atividade,
+.atividade-individual .galeria-atividade {
+    width: 100%;
+    max-width: none;
+
+    margin: 0 0 35px;
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
+
+    background: transparent;
+    box-shadow: none;
 }
 
-.secao-cabecalho {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-
-    margin-bottom: 25px;
-}
-
-.secao-cabecalho h2 {
-    margin: 4px 0 0;
-}
-
-.secao-identificacao {
+.atividade-individual .secao-cabecalho {
     display: block;
 
-    color: #64806c;
-
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 1.2px;
+    margin: 0 0 16px;
+    padding: 0;
 }
 
-.secao-icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    width: 52px;
-    height: 52px;
-
-    border-radius: 14px;
-
-    background: #e8f1e8;
-    color: #35634a;
-
-    font-size: 1.3rem;
+.atividade-individual .secao-cabecalho h2 {
+    margin: 0;
 }
 
-.secao-conteudo p {
+
+/* =====================================================
+   2. CONTEXTUALIZAÇÃO
+===================================================== */
+
+.contextualizacao {
+    padding: 28px !important;
+
+    background: var(--card) !important;
+
+    border: 1px solid var(--borda) !important;
+    border-radius: 16px !important;
+
+    box-shadow: var(--sombra) !important;
+}
+
+.contextualizacao .secao-cabecalho {
     margin-bottom: 18px;
+}
 
-    line-height: 1.8;
+.contextualizacao .secao-cabecalho h2 {
+    padding-bottom: 12px;
+
+    border-bottom: 2px solid var(--azul-suave);
+}
+
+.contextualizacao .secao-conteudo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+    border: none;
+}
+
+.contextualizacao .secao-conteudo p {
+    margin: 0 0 16px;
+
+    color: var(--texto);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.contextualizacao .secao-conteudo p:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -124,51 +162,44 @@
    3. PROBLEMA
 ===================================================== */
 
-.secao-problema {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
+.atividade-individual .secao-problema {
+    width: 100%;
+    max-width: none;
 
-    margin: 50px 0;
-    padding: 35px;
+    display: block;
 
-    border-left: 6px solid #35634a;
-    border-radius: 16px;
+    margin: 0 0 35px;
+    padding: 28px 30px;
 
     background: linear-gradient(
         135deg,
-        #eef5ef,
-        #f8faf7
+        var(--azul-suave),
+        #f8fbfc
     );
+
+    border: 1px solid var(--borda);
+    border-left: 5px solid var(--azul);
+    border-radius: 16px;
+
+    box-shadow: var(--sombra);
 }
 
-.problema-icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    width: 58px;
-    height: 58px;
-
-    border-radius: 50%;
-
-    background: #35634a;
-    color: white;
-
-    font-size: 1.4rem;
+.problema-conteudo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .problema-conteudo h2 {
-    margin: 5px 0 15px;
+    margin: 0 0 14px;
 }
 
 .problema-conteudo p {
-    margin-bottom: 0;
+    margin: 0;
 
-    font-size: 1.08rem;
-    line-height: 1.8;
+    color: var(--texto);
+    font-size: 1.03rem;
+    line-height: 1.75;
 }
 
 
@@ -176,332 +207,388 @@
    4. INFORMAÇÕES DA ATIVIDADE
 ===================================================== */
 
-.atividade-informacoes {
-    padding: 35px;
+.atividade-individual .atividade-informacoes {
+    width: 100%;
+    max-width: none;
 
-    border: 1px solid #e2e8e3;
-    border-radius: 18px;
+    margin: 0 0 35px;
+    padding: 28px !important;
 
-    background: #fbfcfa;
+    background: var(--card) !important;
+
+    border: 1px solid var(--borda) !important;
+    border-radius: 16px !important;
+
+    box-shadow: var(--sombra) !important;
 }
 
-.info-grid {
+.atividade-informacoes .secao-cabecalho {
+    margin-bottom: 20px;
+}
+
+
+/*
+   IMPORTANTE:
+   Estas regras anulam o estilo antigo:
+   .info-grid div { ... }
+   presente no style.css.
+*/
+
+.atividade-informacoes .info-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 18px;
+    gap: 16px;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.info-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
+.atividade-informacoes .info-grid > .info-card {
+    display: block;
 
-    padding: 20px;
+    min-width: 0;
+    min-height: 0;
 
-    border: 1px solid #e7ece8;
-    border-radius: 14px;
+    margin: 0;
+    padding: 20px !important;
 
-    background: white;
+    background: #f9fbfa !important;
+
+    border: 1px solid var(--borda) !important;
+    border-radius: 12px !important;
+
+    color: var(--texto) !important;
+
+    box-shadow: none !important;
 }
 
-.info-card > i {
-    margin-top: 4px;
+.atividade-informacoes .info-grid > .info-card > div {
+    width: auto;
 
-    color: #49785a;
+    margin: 0 !important;
+    padding: 0 !important;
 
-    font-size: 1.25rem;
+    background: transparent !important;
+
+    border: none !important;
+    border-radius: 0 !important;
 }
 
-.info-card h3 {
-    margin: 0 0 7px;
+.atividade-informacoes .info-card h3 {
+    margin: 0 0 8px !important;
+    padding: 0 !important;
 
-    color: #31573f;
+    background: transparent !important;
+
+    color: var(--azul-escuro) !important;
 
     font-size: 1rem;
+    line-height: 1.35;
 }
 
-.info-card p {
-    margin: 0;
+.atividade-informacoes .info-card p {
+    margin: 0 !important;
+    padding: 0 !important;
 
-    line-height: 1.6;
+    background: transparent !important;
+
+    color: var(--texto) !important;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
 }
 
-.info-card-amplo {
+.atividade-informacoes .info-card-amplo {
     grid-column: 1 / -1;
 }
 
 
 /* =====================================================
-   5. ÁREAS STEAM
+   ÁREAS STEAM
 ===================================================== */
 
-.steam-tags {
+.atividade-informacoes .steam-tags {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 8px;
 
-    margin-top: 10px;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
 }
 
-.steam-tags span {
-    padding: 6px 12px;
+.atividade-informacoes .steam-tags span {
+    display: inline-flex;
 
-    border-radius: 20px;
+    align-items: center;
 
-    background: #edf4ee;
-    color: #35634a;
+    margin: 0 !important;
+    padding: 7px 13px !important;
 
-    font-size: 0.85rem;
+    background: var(--azul-suave) !important;
+
+    border: 1px solid var(--borda) !important;
+    border-radius: 999px !important;
+
+    color: var(--azul-escuro) !important;
+
+    font-size: 0.82rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 
 /* =====================================================
-   6. MATERIAIS PARA DOWNLOAD
+   5. MATERIAIS PARA DOWNLOAD
 ===================================================== */
 
-.downloads-atividade {
-    margin: 55px 0;
-    padding: 35px;
+.atividade-individual .downloads-atividade {
+    width: 100%;
+    max-width: none;
 
-    border-radius: 18px;
+    margin: 0 0 35px;
+    padding: 28px !important;
 
-    background: #f2f6f2;
+    background: #f4f8f9 !important;
+
+    border: 1px solid var(--borda) !important;
+    border-radius: 16px !important;
+
+    box-shadow: var(--sombra) !important;
 }
 
 .downloads-texto {
-    margin-bottom: 25px;
+    margin: 0 0 20px;
+    padding: 0;
 }
 
 .downloads-texto h2 {
-    margin: 5px 0 10px;
+    margin: 0 0 8px !important;
 }
 
 .downloads-texto p {
-    margin: 0;
+    margin: 0 !important;
+
+    color: var(--texto-suave);
+    line-height: 1.65;
 }
 
 .downloads-botoes {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 18px;
+    gap: 16px;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.btn-download {
+.atividade-individual .btn-download {
     display: flex;
+
     align-items: center;
-    gap: 15px;
 
-    padding: 20px;
+    width: auto;
+    min-height: 90px;
 
-    border-radius: 14px;
+    margin: 0 !important;
+    padding: 18px 20px !important;
 
     text-decoration: none;
 
+    border-radius: 12px;
+
     transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
 }
 
-.btn-download:hover {
-    transform: translateY(-3px);
-
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
-.btn-download > i:first-child {
-    flex-shrink: 0;
-
-    font-size: 1.8rem;
+.atividade-individual .btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
 }
 
 .btn-download span {
     display: flex;
-    flex: 1;
     flex-direction: column;
+
+    gap: 5px;
 }
 
 .btn-download strong {
-    margin-bottom: 4px;
-}
-
-.btn-download small {
-    font-size: 0.82rem;
-    line-height: 1.4;
-}
-
-.btn-download > i:last-child {
+    margin: 0;
     font-size: 1rem;
 }
 
+.btn-download small {
+    font-size: 0.86rem;
+    line-height: 1.45;
+}
 
-/* BOTÃO DO MATERIAL DO ESTUDANTE */
-
-.btn-aluno {
-    background: #35634a;
+.atividade-individual .btn-aluno {
+    background: var(--azul);
     color: white;
 }
 
+.atividade-individual .btn-aluno:hover {
+    background: var(--azul-escuro);
+    color: white;
+}
 
-/* BOTÃO DO MATERIAL DO PROFESSOR */
-
-.btn-professor {
+.atividade-individual .btn-professor {
     background: white;
-    color: #35634a;
+    color: var(--azul-escuro);
 
-    border: 1px solid #ccd8ce;
+    border: 1px solid var(--borda);
 }
 
 
 /* =====================================================
-   7. POSSIBILIDADES DE ENCAMINHAMENTO
+   6. POSSIBILIDADES DE ENCAMINHAMENTO
 ===================================================== */
 
-.texto-introducao {
-    margin-bottom: 25px;
+.encaminhamentos .texto-introducao {
+    max-width: 900px;
 
-    line-height: 1.8;
+    margin: 0 0 20px;
+
+    color: var(--texto);
+    line-height: 1.75;
 }
 
 .encaminhamentos-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 18px;
+    gap: 16px;
+
+    width: 100%;
 }
 
 .encaminhamento-card {
-    display: flex;
-    gap: 18px;
+    display: block;
 
+    min-width: 0;
+
+    margin: 0;
     padding: 22px;
 
-    border: 1px solid #e1e8e2;
+    background: var(--card);
+
+    border: 1px solid var(--borda);
     border-radius: 14px;
 
-    background: white;
-}
-
-.encaminhamento-card:last-child {
-    grid-column: 1 / -1;
-}
-
-.numero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    width: 42px;
-    height: 42px;
-
-    border-radius: 10px;
-
-    background: #e8f1e8;
-    color: #35634a;
-
-    font-size: 0.8rem;
-    font-weight: 700;
+    box-shadow: var(--sombra);
 }
 
 .encaminhamento-card h3 {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
 
-    color: #31573f;
+    color: var(--azul-escuro);
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
 .encaminhamento-card p {
     margin: 0;
 
+    color: var(--texto);
     line-height: 1.65;
+}
+
+.encaminhamento-card:last-child {
+    grid-column: auto;
 }
 
 
 /* =====================================================
-   8. DICAS PARA APLICAÇÃO
+   7. DICAS PARA APLICAÇÃO
 ===================================================== */
 
-.dicas-aplicacao {
-    padding: 35px;
+.atividade-individual .dicas-aplicacao {
+    padding: 28px !important;
 
-    border-radius: 18px;
+    background: #fcfaf4 !important;
 
-    background: #faf8f1;
+    border: 1px solid var(--borda) !important;
+    border-radius: 16px !important;
+
+    box-shadow: var(--sombra) !important;
+}
+
+.dicas-aplicacao .secao-cabecalho {
+    margin-bottom: 20px;
 }
 
 .dicas-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 16px;
+    gap: 14px;
+
+    width: 100%;
 }
 
 .dica-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
+    display: block;
 
+    margin: 0;
     padding: 18px;
 
-    border-radius: 12px;
-
     background: white;
-}
 
-.dica-item i {
-    flex-shrink: 0;
-
-    margin-top: 4px;
-
-    color: #a07a32;
+    border: 1px solid #ece6d7;
+    border-radius: 12px;
 }
 
 .dica-item p {
     margin: 0;
 
+    color: var(--texto);
     line-height: 1.65;
 }
 
-
-/* PERGUNTAS ORIENTADORAS */
-
 .perguntas-box {
-    margin-top: 25px;
-    padding: 25px;
-
-    border-left: 4px solid #a07a32;
-    border-radius: 14px;
+    margin: 20px 0 0;
+    padding: 22px;
 
     background: white;
+
+    border: 1px solid #ece6d7;
+    border-left: 4px solid #b08a3e;
+    border-radius: 12px;
 }
 
 .perguntas-box h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 0 14px;
 
-    color: #70551f;
-}
-
-.perguntas-box h3 i {
-    margin-right: 7px;
+    color: var(--azul-escuro);
+    font-size: 1rem;
 }
 
 .perguntas-box ul {
     margin: 0;
-
     padding-left: 22px;
 }
 
 .perguntas-box li {
     margin-bottom: 10px;
 
+    color: var(--texto);
     line-height: 1.6;
 }
 
@@ -511,62 +598,65 @@
 
 
 /* =====================================================
-   9. DICAS PARA ADAPTAÇÃO
+   8. DICAS PARA ADAPTAÇÃO
 ===================================================== */
 
 .adaptacoes-lista {
-    display: flex;
-    flex-direction: column;
+    display: grid;
 
-    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    width: 100%;
 }
 
 .adaptacoes-lista article {
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
+    display: block;
 
+    margin: 0;
     padding: 22px;
 
-    border-left: 4px solid #78927e;
-    border-radius: 0 12px 12px 0;
+    background: var(--card);
 
-    background: #f8faf8;
-}
+    border: 1px solid var(--borda);
+    border-left: 4px solid var(--azul);
+    border-radius: 0 14px 14px 0;
 
-.adaptacoes-lista article > i {
-    flex-shrink: 0;
-
-    margin-top: 5px;
-
-    color: #49785a;
-
-    font-size: 1.2rem;
+    box-shadow: var(--sombra);
 }
 
 .adaptacoes-lista h3 {
-    margin: 0 0 7px;
+    margin: 0 0 9px;
 
-    color: #31573f;
+    color: var(--azul-escuro);
+    font-size: 1rem;
 }
 
 .adaptacoes-lista p {
     margin: 0;
 
+    color: var(--texto);
     line-height: 1.65;
 }
 
 
 /* =====================================================
-   10. REGISTROS DA ATIVIDADE
+   9. REGISTROS DA ATIVIDADE
 ===================================================== */
+
+.galeria-atividade .secao-cabecalho {
+    margin-bottom: 20px;
+}
 
 .galeria-grid {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 
-    gap: 18px;
+    gap: 16px;
+
+    width: 100%;
 }
 
 .galeria-grid img {
@@ -575,33 +665,43 @@
     width: 100%;
     height: 230px;
 
+    margin: 0;
+    padding: 0;
+
     object-fit: cover;
 
+    border: 1px solid var(--borda);
     border-radius: 14px;
 
-    transition: transform 0.25s ease;
+    box-shadow: var(--sombra);
+
+    transition: transform 0.2s ease;
 }
 
 .galeria-grid img:hover {
-    transform: scale(1.02);
+    transform: translateY(-2px);
 }
 
 
 /* =====================================================
-   11. RESPONSIVIDADE - TABLETS E TELAS MENORES
+   RESPONSIVIDADE – TABLET
 ===================================================== */
 
 @media (max-width: 900px) {
 
-    .info-grid,
+    .atividade-capa {
+        height: 320px;
+    }
+
+    .atividade-informacoes .info-grid,
     .downloads-botoes,
     .encaminhamentos-grid,
-    .dicas-grid {
+    .dicas-grid,
+    .adaptacoes-lista {
         grid-template-columns: 1fr;
     }
 
-    .info-card-amplo,
-    .encaminhamento-card:last-child {
+    .atividade-informacoes .info-card-amplo {
         grid-column: auto;
     }
 
@@ -611,58 +711,71 @@
 
     .galeria-grid img {
         height: auto;
+        max-height: 450px;
     }
 
 }
 
 
 /* =====================================================
-   12. RESPONSIVIDADE - CELULARES
+   RESPONSIVIDADE – CELULAR
 ===================================================== */
 
 @media (max-width: 600px) {
 
+    .atividade-individual h1 {
+        font-size: 1.7rem;
+    }
+
     .atividade-chamada {
-        font-size: 1.08rem;
+        font-size: 1rem;
     }
 
-    .secao-atividade,
-    .galeria-atividade {
-        margin: 40px 0;
+    .atividade-capa {
+        height: 240px;
+
+        border-radius: 14px;
     }
 
-    .secao-problema {
-        flex-direction: column;
-
-        padding: 25px;
+    .contextualizacao,
+    .atividade-individual .secao-problema,
+    .atividade-individual .atividade-informacoes,
+    .atividade-individual .downloads-atividade,
+    .atividade-individual .dicas-aplicacao {
+        padding: 20px !important;
     }
 
-    .atividade-informacoes,
-    .downloads-atividade,
-    .dicas-aplicacao {
-        padding: 25px 20px;
+    .atividade-individual .secao-atividade,
+    .atividade-individual .galeria-atividade {
+        margin-bottom: 28px;
     }
 
-    .secao-cabecalho {
-        align-items: flex-start;
+    .atividade-individual .secao-problema {
+        border-left-width: 4px;
     }
 
-    .secao-icone {
-        width: 46px;
-        height: 46px;
-
-        font-size: 1.1rem;
+    .atividade-individual h2 {
+        font-size: 1.2rem;
     }
 
-    .info-card,
+    .atividade-informacoes .info-grid > .info-card,
     .encaminhamento-card,
     .dica-item,
     .adaptacoes-lista article {
-        padding: 17px;
+        padding: 18px !important;
+    }
+
+    .steam-tags {
+        gap: 6px;
+    }
+
+    .atividade-informacoes .steam-tags span {
+        padding: 6px 10px !important;
+        font-size: 0.78rem;
     }
 
     .perguntas-box {
-        padding: 20px;
+        padding: 18px;
     }
 
 }
