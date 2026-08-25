@@ -1,29 +1,64 @@
 /* =====================================================
-   CONFIGURAÇÃO GERAL DA PÁGINA
+   ATIVIDADES – ESTILO ESPECÍFICO
+   Este arquivo deve ser carregado depois do style.css
 ===================================================== */
 
-.atividade-individual {
+
+/* =====================================================
+   CONFIGURAÇÃO GERAL
+===================================================== */
+
+.atividade-individual,
+.posts.atividade-individual {
+    width: 100%;
+    max-width: none !important;
+    min-width: 0;
+
     display: flex;
     flex-direction: column;
+
     gap: 0;
+
+    box-sizing: border-box;
+}
+
+.atividade-individual *,
+.atividade-individual *::before,
+.atividade-individual *::after {
+    box-sizing: border-box;
+}
+
+.atividade-individual h1,
+.atividade-individual h2,
+.atividade-individual h3,
+.atividade-individual p {
+    max-width: none;
 }
 
 .atividade-individual h1 {
-    margin: 0 0 12px;
+    margin: 0;
+
     color: var(--azul-escuro);
-    font-size: 2rem;
-    line-height: 1.25;
+
+    font-size: clamp(2rem, 3vw, 2.55rem);
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .atividade-individual h2 {
     margin: 0;
+
     color: var(--azul-escuro);
-    font-size: 1.35rem;
+
+    font-size: clamp(1.35rem, 2vw, 1.6rem);
     line-height: 1.3;
+
     scroll-margin-top: 110px;
 }
 
 .atividade-individual h3 {
+    margin: 0;
+
     color: var(--azul-escuro);
 }
 
@@ -31,41 +66,61 @@
     color: var(--texto);
 }
 
+
 /* =====================================================
    APRESENTAÇÃO DA ATIVIDADE
 ===================================================== */
 
 .atividade-apresentacao {
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    max-width: none;
 
-    margin: 0 0 38px;
+    margin: 0 0 42px;
     padding: 0;
 }
 
 .atividade-titulo {
     width: 100%;
-    margin: 0 0 22px;
+
+    margin: 0 0 24px;
+    padding: 0;
+
     text-align: center;
 }
 
 .atividade-titulo h1 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .atividade-chamada {
     width: 100%;
-    max-width: none;
-    margin: 0;
+    max-width: 980px;
+
+    margin: 0 auto;
 
     color: var(--texto-suave);
-    font-size: 1rem;
+
+    font-size: 1.05rem;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.65;
+
     text-align: center;
 
-    white-space: nowrap;
+    white-space: normal;
+}
+
+.atividade-imagem {
+    width: 100%;
+    max-width: none;
+
+    overflow: hidden;
+
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+
+    background: var(--azul-suave);
+
+    box-shadow: var(--sombra);
 }
 
 .atividade-capa {
@@ -74,24 +129,19 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 16 / 6;
+
+    aspect-ratio: 16 / 7;
 
     margin: 0;
     padding: 0;
 
     object-fit: cover;
     object-position: center;
-
-    box-sizing: border-box;
-
-    border: 1px solid var(--borda);
-    border-radius: 16px;
-
-    box-shadow: var(--sombra);
 }
 
+
 /* =====================================================
-ESTRUTURA GERAL DAS SEÇÕES
+   ESTRUTURA GERAL DAS SEÇÕES
 ===================================================== */
 
 .atividade-individual .secao-atividade,
@@ -99,17 +149,21 @@ ESTRUTURA GERAL DAS SEÇÕES
     width: 100%;
     max-width: none;
 
-    margin: 0 0 38px;
+    margin: 0 0 42px;
     padding: 0;
 
     background: transparent;
+
     border: none;
     border-radius: 0;
+
     box-shadow: none;
 }
 
 .atividade-individual .secao-cabecalho {
-    margin: 0 0 16px;
+    width: 100%;
+
+    margin: 0 0 18px;
     padding: 0;
 }
 
@@ -117,77 +171,64 @@ ESTRUTURA GERAL DAS SEÇÕES
     margin: 0;
 }
 
+
+/* =====================================================
+   CONTEXTUALIZAÇÃO
+===================================================== */
+
 .contextualizacao {
-    margin-bottom: 38px !important;
-    padding: 0 !important;
-
-    background: transparent !important;
-
-    border: none !important;
-    border-radius: 0 !important;
-
-    box-shadow: none !important;
+    margin-bottom: 42px !important;
 }
 
 .contextualizacao .secao-cabecalho {
-    margin-bottom: 18px;
-    padding-bottom: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 13px;
 
     border-bottom: 1px solid var(--borda);
 }
 
-.contextualizacao .secao-cabecalho h2 {
-    margin: 0;
-    padding: 0;
-
-    border: none;
-}
-
 .contextualizacao .secao-conteudo {
     width: 100%;
+
     margin: 0;
     padding: 0;
-
-    background: transparent;
-    border: none;
-    box-shadow: none;
 }
 
 .contextualizacao .secao-conteudo p {
     margin: 0 0 16px;
 
     color: var(--texto);
+
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.75;
 }
 
 .contextualizacao .secao-conteudo p:last-child {
     margin-bottom: 0;
 }
 
+
 /* =====================================================
-PROBLEMA
+   PROBLEMA
 ===================================================== */
 
 .atividade-individual .secao-problema {
     width: 100%;
 
-    margin: 0 0 38px;
-    padding: 26px 28px;
+    margin: 0 0 42px;
+    padding: 28px 30px;
 
     background: var(--azul-suave);
 
     border: 1px solid var(--borda);
     border-left: 5px solid var(--azul);
-    border-radius: 14px;
+    border-radius: 16px;
 
     box-shadow: none;
 }
 
 .problema-conteudo {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .problema-conteudo h2 {
@@ -198,30 +239,32 @@ PROBLEMA
     margin: 0;
 
     color: var(--texto);
+
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.75;
 }
 
+
 /* =====================================================
-INFORMAÇÕES DA ATIVIDADE
+   INFORMAÇÕES DA ATIVIDADE
 ===================================================== */
 
 .atividade-individual .atividade-informacoes {
     width: 100%;
 
-    margin: 0 0 38px;
-    padding: 26px !important;
+    margin: 0 0 42px;
+    padding: 28px !important;
 
     background: var(--azul-suave) !important;
 
     border: 1px solid var(--borda) !important;
-    border-radius: 16px !important;
+    border-radius: 18px !important;
 
     box-shadow: none !important;
 }
 
 .atividade-informacoes .secao-cabecalho {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .atividade-informacoes .info-grid {
@@ -229,52 +272,31 @@ INFORMAÇÕES DA ATIVIDADE
 
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 14px;
+    gap: 16px;
 
     width: 100%;
+
     margin: 0;
     padding: 0;
 }
 
-
-/*
-   Blocos internos das informações
-*/
-
-.atividade-informacoes .info-grid > .info-card {
-    display: block;
-
+.atividade-informacoes .info-card {
     min-width: 0;
+
     margin: 0;
-    padding: 18px 20px !important;
+    padding: 20px !important;
 
     background: rgba(255, 255, 255, 0.38) !important;
 
     border: 1px solid var(--borda) !important;
-    border-radius: 12px !important;
-
-    box-shadow: none !important;
-}
-
-.atividade-informacoes .info-grid > .info-card > div {
-    width: auto;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    background: transparent !important;
-
-    border: none !important;
-    border-radius: 0 !important;
+    border-radius: 14px !important;
 
     box-shadow: none !important;
 }
 
 .atividade-informacoes .info-card h3 {
-    margin: 0 0 7px !important;
+    margin: 0 0 8px !important;
     padding: 0 !important;
-
-    background: transparent !important;
 
     color: var(--azul-escuro) !important;
 
@@ -286,17 +308,16 @@ INFORMAÇÕES DA ATIVIDADE
     margin: 0 !important;
     padding: 0 !important;
 
-    background: transparent !important;
-
     color: var(--texto) !important;
 
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.96rem;
+    line-height: 1.65;
 }
 
 .atividade-informacoes .info-card-amplo {
     grid-column: 1 / -1;
 }
+
 
 /* =====================================================
    ÁREAS STEAM
@@ -305,35 +326,34 @@ INFORMAÇÕES DA ATIVIDADE
 .atividade-informacoes .steam-tags {
     display: flex;
     flex-wrap: wrap;
+
     gap: 8px;
 
     width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
 
-    background: transparent !important;
-
-    border: none !important;
+    margin: 0;
+    padding: 0;
 }
 
 .atividade-informacoes .steam-tags span {
     display: inline-flex;
     align-items: center;
 
-    margin: 0 !important;
-    padding: 7px 12px !important;
+    margin: 0;
+    padding: 7px 12px;
 
-    background: transparent !important;
+    background: transparent;
 
-    border: 1px solid var(--azul) !important;
-    border-radius: 999px !important;
+    border: 1px solid var(--azul);
+    border-radius: 999px;
 
-    color: var(--azul-escuro) !important;
+    color: var(--azul-escuro);
 
     font-size: 0.82rem;
     font-weight: 600;
     line-height: 1.2;
 }
+
 
 /* =====================================================
    MATERIAIS PARA DOWNLOAD
@@ -342,30 +362,30 @@ INFORMAÇÕES DA ATIVIDADE
 .atividade-individual .downloads-atividade {
     width: 100%;
 
-    margin: 0 0 38px;
-    padding: 26px !important;
+    margin: 0 0 42px;
+    padding: 28px !important;
 
     background: transparent !important;
 
     border: 1px solid var(--borda) !important;
-    border-radius: 16px !important;
+    border-radius: 18px !important;
 
     box-shadow: none !important;
 }
 
 .downloads-texto {
-    margin: 0 0 20px;
-    padding: 0;
+    margin: 0 0 22px;
 }
 
 .downloads-texto h2 {
-    margin: 0 0 8px !important;
+    margin: 0 0 8px;
 }
 
 .downloads-texto p {
-    margin: 0 !important;
+    margin: 0;
 
     color: var(--texto-suave);
+
     line-height: 1.65;
 }
 
@@ -374,26 +394,25 @@ INFORMAÇÕES DA ATIVIDADE
 
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 14px;
+    gap: 16px;
 
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .atividade-individual .btn-download {
     display: flex;
     align-items: center;
 
-    width: auto;
-    min-height: 86px;
+    gap: 14px;
+
+    min-height: 92px;
 
     margin: 0 !important;
-    padding: 18px 20px !important;
+    padding: 18px 22px !important;
 
     text-decoration: none;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     transition:
         transform 0.2s ease,
@@ -401,8 +420,15 @@ INFORMAÇÕES DA ATIVIDADE
         background 0.2s ease;
 }
 
+.atividade-individual .btn-download i {
+    flex: 0 0 auto;
+
+    font-size: 1.5rem;
+}
+
 .atividade-individual .btn-download:hover {
     transform: translateY(-2px);
+
     box-shadow: var(--sombra);
 }
 
@@ -415,7 +441,9 @@ INFORMAÇÕES DA ATIVIDADE
 
 .btn-download strong {
     margin: 0;
+
     font-size: 1rem;
+    line-height: 1.35;
 }
 
 .btn-download small {
@@ -425,31 +453,37 @@ INFORMAÇÕES DA ATIVIDADE
 
 .atividade-individual .btn-aluno {
     background: var(--azul);
+
     color: white;
 }
 
 .atividade-individual .btn-aluno:hover {
     background: var(--azul-escuro);
+
     color: white;
 }
 
 .atividade-individual .btn-professor {
-    background: transparent;
-    color: var(--azul-escuro);
+    background: rgba(255, 255, 255, 0.3);
 
     border: 1px solid var(--azul);
+
+    color: var(--azul-escuro);
 }
+
 
 /* =====================================================
    POSSIBILIDADES DE ENCAMINHAMENTO
 ===================================================== */
 
 .encaminhamentos .texto-introducao {
+    width: 100%;
     max-width: none;
 
-    margin: 0 0 20px;
+    margin: 0 0 22px;
 
     color: var(--texto);
+
     line-height: 1.7;
 }
 
@@ -458,30 +492,40 @@ INFORMAÇÕES DA ATIVIDADE
 
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 14px;
+    gap: 16px;
 
     width: 100%;
 }
 
 .encaminhamento-card {
-    display: block;
-
     min-width: 0;
+
     margin: 0;
-    padding: 20px;
+    padding: 22px;
 
     background: transparent;
 
     border: 1px solid var(--borda);
-    border-radius: 12px;
+    border-radius: 14px;
 
     box-shadow: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.encaminhamento-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: var(--sombra);
 }
 
 .encaminhamento-card h3 {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
 
     color: var(--azul-escuro);
+
     font-size: 1rem;
     line-height: 1.4;
 }
@@ -490,27 +534,31 @@ INFORMAÇÕES DA ATIVIDADE
     margin: 0;
 
     color: var(--texto);
+
     line-height: 1.65;
 }
+
 
 /* =====================================================
    DICAS PARA APLICAÇÃO
 ===================================================== */
 
 .atividade-individual .dicas-aplicacao {
-    margin-bottom: 38px;
-    padding: 26px !important;
+    width: 100%;
+
+    margin-bottom: 42px;
+    padding: 28px !important;
 
     background: transparent !important;
 
     border: 1px solid var(--borda) !important;
-    border-radius: 16px !important;
+    border-radius: 18px !important;
 
     box-shadow: none !important;
 }
 
 .dicas-aplicacao .secao-cabecalho {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .dicas-grid {
@@ -524,15 +572,15 @@ INFORMAÇÕES DA ATIVIDADE
 }
 
 .dica-item {
-    display: block;
+    min-width: 0;
 
     margin: 0;
-    padding: 18px;
+    padding: 18px 20px;
 
-    background: transparent;
+    background: rgba(255, 255, 255, 0.18);
 
     border: 1px solid var(--borda);
-    border-radius: 12px;
+    border-radius: 14px;
 
     box-shadow: none;
 }
@@ -541,18 +589,26 @@ INFORMAÇÕES DA ATIVIDADE
     margin: 0;
 
     color: var(--texto);
+
     line-height: 1.65;
 }
 
+
+/* =====================================================
+   PERGUNTAS ORIENTADORAS
+===================================================== */
+
 .perguntas-box {
+    width: 100%;
+
     margin: 20px 0 0;
-    padding: 20px;
+    padding: 22px;
 
     background: var(--azul-suave);
 
     border: 1px solid var(--borda);
     border-left: 4px solid var(--azul);
-    border-radius: 12px;
+    border-radius: 14px;
 
     box-shadow: none;
 }
@@ -561,7 +617,9 @@ INFORMAÇÕES DA ATIVIDADE
     margin: 0 0 14px;
 
     color: var(--azul-escuro);
+
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 .perguntas-box ul {
@@ -573,12 +631,14 @@ INFORMAÇÕES DA ATIVIDADE
     margin-bottom: 10px;
 
     color: var(--texto);
+
     line-height: 1.6;
 }
 
 .perguntas-box li:last-child {
     margin-bottom: 0;
 }
+
 
 /* =====================================================
    DICAS PARA ADAPTAÇÃO
@@ -589,39 +649,43 @@ INFORMAÇÕES DA ATIVIDADE
 
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 14px;
+    gap: 16px;
 
     width: 100%;
 }
 
 .adaptacoes-lista article {
-    display: block;
+    min-width: 0;
 
     margin: 0;
-    padding: 20px;
+    padding: 22px;
 
     background: transparent;
 
     border: 1px solid var(--borda);
     border-left: 4px solid var(--azul);
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 14px 14px 0;
 
     box-shadow: none;
 }
 
 .adaptacoes-lista h3 {
-    margin: 0 0 8px;
+    margin: 0 0 9px;
 
     color: var(--azul-escuro);
+
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 .adaptacoes-lista p {
     margin: 0;
 
     color: var(--texto);
+
     line-height: 1.65;
 }
+
 
 /* =====================================================
    REGISTROS DA ATIVIDADE
@@ -645,44 +709,51 @@ INFORMAÇÕES DA ATIVIDADE
     display: block;
 
     width: 100%;
-    height: 230px;
+    height: 240px;
 
     margin: 0;
     padding: 0;
 
     object-fit: cover;
+    object-position: center;
 
     border: 1px solid var(--borda);
-    border-radius: 14px;
+    border-radius: 16px;
 
     box-shadow: none;
 
-    transition: transform 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .galeria-grid img:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+
+    box-shadow: var(--sombra);
 }
+
 
 /* =====================================================
    RESPONSIVIDADE – TABLET
 ===================================================== */
 
-@media (max-width: 950px) {
-
-    .atividade-chamada {
-        white-space: normal;
-    }
-
-}
-
 @media (max-width: 900px) {
 
-    .atividade-informacoes .info-grid,
+    .atividade-individual,
+    .posts.atividade-individual {
+        width: 100%;
+        max-width: none !important;
+    }
+
     .downloads-botoes,
     .encaminhamentos-grid,
     .dicas-grid,
     .adaptacoes-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .atividade-informacoes .info-grid {
         grid-template-columns: 1fr;
     }
 
@@ -691,15 +762,15 @@ INFORMAÇÕES DA ATIVIDADE
     }
 
     .galeria-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .galeria-grid img {
-        height: auto;
-        max-height: 450px;
+        height: 260px;
     }
 
 }
+
 
 /* =====================================================
    RESPONSIVIDADE – CELULAR
@@ -708,24 +779,43 @@ INFORMAÇÕES DA ATIVIDADE
 @media (max-width: 600px) {
 
     .atividade-individual h1 {
-        font-size: 1.7rem;
+        font-size: 1.85rem;
+    }
+
+    .atividade-individual h2 {
+        font-size: 1.25rem;
+    }
+
+    .atividade-apresentacao {
+        margin-bottom: 32px;
+    }
+
+    .atividade-titulo {
+        margin-bottom: 18px;
     }
 
     .atividade-chamada {
         font-size: 0.98rem;
         line-height: 1.6;
-        white-space: normal;
     }
 
-    .atividade-capa {
+    .atividade-imagem {
         border-radius: 14px;
     }
 
-    .atividade-apresentacao {
-        margin-bottom: 30px;
+    .atividade-capa {
+        aspect-ratio: 16 / 9;
     }
 
-    .contextualizacao,
+    .atividade-individual .secao-atividade,
+    .atividade-individual .galeria-atividade {
+        margin-bottom: 32px;
+    }
+
+    .contextualizacao {
+        margin-bottom: 32px !important;
+    }
+
     .atividade-individual .secao-problema,
     .atividade-individual .atividade-informacoes,
     .atividade-individual .downloads-atividade,
@@ -733,41 +823,52 @@ INFORMAÇÕES DA ATIVIDADE
         padding: 20px !important;
     }
 
-    .contextualizacao {
-        padding: 0 !important;
-    }
-
-    .atividade-individual .secao-atividade,
-    .atividade-individual .galeria-atividade {
-        margin-bottom: 30px;
-    }
-
     .atividade-individual .secao-problema {
+        margin-bottom: 32px;
+
         border-left-width: 4px;
     }
 
-    .atividade-individual h2 {
-        font-size: 1.2rem;
-    }
-
-    .atividade-informacoes .info-grid > .info-card,
+    .atividade-informacoes .info-card,
     .encaminhamento-card,
     .dica-item,
     .adaptacoes-lista article {
         padding: 18px !important;
     }
 
-    .steam-tags {
-        gap: 6px;
+    .downloads-botoes {
+        gap: 12px;
     }
 
-    .atividade-informacoes .steam-tags span {
-        padding: 6px 10px !important;
-        font-size: 0.78rem;
+    .atividade-individual .btn-download {
+        min-height: 82px;
+
+        padding: 16px 18px !important;
     }
 
     .perguntas-box {
         padding: 18px;
+
+        border-left-width: 4px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-grid img {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .atividade-informacoes .steam-tags {
+        gap: 6px;
+    }
+
+    .atividade-informacoes .steam-tags span {
+        padding: 6px 10px;
+
+        font-size: 0.78rem;
     }
 
 }
